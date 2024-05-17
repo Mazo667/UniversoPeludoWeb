@@ -6,23 +6,22 @@
         <title>Registrarse</title>
     </head>
     <body>
-        <header> <!--MENU DE NAVEGACION-->
-            <nav>
-                <a class="top-menu-items" href="1_inicio.html">INICIO |</a>
-                <a class="top-menu-items" href="7_iniciar-sesion.html">MI CUENTA |</a>
-                <a class="top-menu-items" href="../Extranet/5_formulario_postulante.html">SE PARTE DE NOSOTROS! |</a>
-                <a class="top-menu-items" href="4_quienes_somos.html">¿QUIENES SOMOS? |</a>
-                <a class="top-menu-items" href="2_novedades.html">NOVEDADES |</a>
-                <a class="top-menu-items" href="../Extranet/2_enviar_consulta.html">HACE TU CONSULTA |</a>
-                <a class="top-menu-items" href="3_preguntas_frecuentes.html">PREGUNTAS FRECUENTES</a>
-            </nav>
-        </header>
+        <!--MENU DE NAVEGACION-->
+        <nav>
+            <a class="top-menu-items" href="1_inicio.html">INICIO |</a>
+            <a class="top-menu-items" href="7_iniciar-sesion.html">MI CUENTA |</a>
+            <a class="top-menu-items" href="../Extranet/5_formulario_postulante.html">SE PARTE DE NOSOTROS! |</a>
+            <a class="top-menu-items" href="4_quienes_somos.html">¿QUIENES SOMOS? |</a>
+            <a class="top-menu-items" href="2_novedades.html">NOVEDADES |</a>
+            <a class="top-menu-items" href="../Extranet/2_enviar_consulta.html">HACE TU CONSULTA |</a>
+            <a class="top-menu-items" href="3_preguntas_frecuentes.html">PREGUNTAS FRECUENTES</a>
+        </nav>
 
-        <div class="container-login">
+        <div> <!--CONTENEDOR DE REGISTRO-->
 
             <h1>REGISTRARSE</h1>
 
-            <form class="iniciar-sesion">
+            <form>
                 <label for="nombre">Nombre</label><br>
                 <input aria-label="Nombre" type="nombre" id="nombre" name="nombre" placeholder="Ingrese su nombre" required><br>
                 <label for="apellido">Apellido</label><br>
@@ -44,13 +43,12 @@
                 <label for="confirmarPassword">Confirmar Contraseña</label><br>
                 <input aria-label="Confirmar Contraseña" type="confirmarPassword" id="confirmarPassword" name="confirmarPassword" placeholder="Confirme su contraseña" required><br>
                 <br>
+                <!--BOTONES Y ENLACE A OTRA PAGINA-->
                 <img src="assets/imagenes/patita.png" alt="patita">
                 <a href="7_iniciar-sesion.html">¿Ya tienes cuenta? Inicia Sesion</a><br><br>
                 <button type="submit">REGISTRARSE</button>
-            </form>
-        
-            <a href="7_iniciar-sesion.html"><button type="submit">VOLVER</button></a>
-            
+                <a href="7_iniciar-sesion.html"><button type="submit">VOLVER</button></a>
+            </form> 
         </div>   
     </body>
 </html>

@@ -6,24 +6,21 @@
         <title>Iniciar Sesion</title>
     </head>
     <body> 
-        <header> <!--MENU DE NAVEGACION-->
-            <nav>
-                <a class="top-menu-items" href="1_inicio.html">INICIO |</a>
-                <a class="top-menu-items" href="7_iniciar-sesion.html">MI CUENTA |</a>
-                <a class="top-menu-items" href="../Extranet/5_formulario_postulante.html">SE PARTE DE NOSOTROS! |</a>
-                <a class="top-menu-items" href="4_quienes_somos.html">¿QUIENES SOMOS? |</a>
-                <a class="top-menu-items" href="2_novedades.html">NOVEDADES |</a>
-                <a class="top-menu-items" href="../Extranet/2_enviar_consulta.html">HACE TU CONSULTA |</a>
-                <a class="top-menu-items" href="3_preguntas_frecuentes.html">PREGUNTAS FRECUENTES</a>
-            </nav>
-        </header>
-
-        <div class="container-login">
-
+        <!--MENU DE NAVEGACION-->
+        <nav>
+            <a class="top-menu-items" href="1_inicio.html">INICIO |</a>
+            <a class="top-menu-items" href="7_iniciar-sesion.html">MI CUENTA |</a>
+            <a class="top-menu-items" href="../Extranet/5_formulario_postulante.html">SE PARTE DE NOSOTROS! |</a>
+            <a class="top-menu-items" href="4_quienes_somos.html">¿QUIENES SOMOS? |</a>
+            <a class="top-menu-items" href="2_novedades.html">NOVEDADES |</a>
+            <a class="top-menu-items" href="../Extranet/2_enviar_consulta.html">HACE TU CONSULTA |</a>
+            <a class="top-menu-items" href="3_preguntas_frecuentes.html">PREGUNTAS FRECUENTES</a>
+        </nav>
+        <div> <!--CONTENEDOR LOGUEO-->
             <h1>INICIAR SESION</h1>
 
-            <form class="iniciar-sesion">
-                <table border>
+            <form>
+                <table border="1">
                     <tr>
                         <td>
                             <label for="email">Ingrese correo electronico</label><br>
@@ -34,24 +31,21 @@
                             <a href="">¿Olvidaste tu contraseña? | </a> <!-- se manda un gmail a la cuenta registrada para hacer el cambio de contraseña, no creo que tenga que hacer referencia a nada por el momento, o si?-->
                             <a href="6_registrarse.html">¿No tienes cuenta? Registrate</a> 
                         </td>
-
                         <td>
                             <img src="assets/imagenes/usuario.png" alt="usuario" width="100">
                         </td>
                     </tr>
                 </table>
+                <!--BOTONES-->
+                <a href="../Extranet/1_mi_cuenta.html"><button>ACEPTAR <img src="assets/imagenes/ACEPTAR.png" alt="aceptar" width="20"></button></a>
+                <button type="reset">CANCELAR <img src="assets/imagenes/CANCELAR.png" alt="cancelar" width="20"></button><br>
             </form>
         </div><br>
+  
+        <!--PIE DE PAGINA-->
+        <a href=""> <img src="assets/imagenes/instagram.png" alt="instagram">universoPeludo</a>
+        <a href=""><img src="assets/imagenes/facebook.png" alt="facebook">refugioUniversoPeludo</a>
+        <a href=""> <img src="assets/imagenes/gmail.png" alt="gmail">universoPeludo@gmail.com</a>
 
-            <a href="../Extranet/1_mi_cuenta.html"><button>ACEPTAR <img src="assets/imagenes/ACEPTAR.png" alt="aceptar" width="20"></button></a>
-            <button type="reset">CANCELAR <img src="assets/imagenes/CANCELAR.png" alt="cancelar" width="20"></button><br>
-            
-        <footer> <!--PIE DE PAGINA-->
-            <span class="redes_sociales"> <br>
-                <a href=""> <img src="assets/imagenes/instagram.png" alt="instagram">universoPeludo</a>
-                <a href=""><img src="assets/imagenes/facebook.png" alt="facebook">refugioUniversoPeludo</a>
-                <a href=""> <img src="assets/imagenes/gmail.png" alt="gmail">universoPeludo@gmail.com</a>
-            </span>
-        </footer>
     </body>
 </html>
