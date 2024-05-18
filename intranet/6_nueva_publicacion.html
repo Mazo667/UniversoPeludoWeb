@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Nueva Publicacion</title>
+    </head>
+    <body>
+        <h3>ADMINISTRACION - NUEVA PUBLICACION</h3>
+        <!--MENU DE NAVEGACION-->
+        <table border="1">
+            <tr>
+                <th rowspan="2">
+                    <menu>
+                        <li><a href="1_consultas.html"> <img src="../assets/iconos/consultas.png" width="95"><br> CONSULTAS</a></li> 
+                        <li><a href="3_usuarios.html">  <img src="../assets/iconos/usuario.png" width="70"><br> USUARIOS</a></li> 
+                        <li> <a href="5_mod_elim_publicaciones.html"> <img src="../assets/iconos/publicacion.png" width="80"><br> PUBLICACIONES</a></li>
+                        <li><a href="7_seguimientos.html"> <img src="../assets/iconos/pedidos.png" width="70"><br> SEGUIMIENTOS</a></li>
+                        <li><a href="9_pedidos_de_adopcion.html"> <img src="../assets/iconos/pedidos.png" width="70"><br> PEDIDOS DE ADOPCION</a></li>
+                        <li><a href="11_postulamiento_voluntario.html"> <img src="../assets/iconos/pedidos.png" width="70"><br> POSTULANTES</a></li>  
+                    </menu>
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <div>
+                        <form>
+                            <input type="text" name="nombre" id="nombre" placeholder="NOMBRE"> <br>
+                            <input type="text" name="especie" id="especie" placeholder="ESPECIE"> <br>
+                            <input type="text" name="sexo" id="sexo" placeholder="SEXO"> <br>
+                            <label>Edad</label>
+                            <input type="date" name="edad" id="edad" placeholder="EDAD"> <br>
+                            <input type="text" name="tamaño" id="tamaño" placeholder="TAMAÑO"> <br><br>
+                            <textarea name="descripcion" id="descripcion" cols="30" rows="10" placeholder="DESCRIPCION..."></textarea><br>
+                            <button type="submit">PUBLICAR <img src="../assets/iconos/aceptar.png" width="20"></button>
+                            <a href="5_mod_elim_publicaciones.html"><button type="button">CANCELAR <img src="../assets/iconos/cancelar.png" width="20"></button></a>
+                        </form>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
