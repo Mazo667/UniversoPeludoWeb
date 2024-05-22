@@ -8,46 +8,55 @@
     <body>
         <!--MENU DE NAVEGACION-->
         <nav>
-            <a class="top-menu-items" href="1_inicio.html">INICIO |</a>
-            <a class="top-menu-items" href="7_iniciar-sesion.html">MI CUENTA |</a>
-            <a class="top-menu-items" href="../extranet/5_formulario_postulante.html">SE PARTE DE NOSOTROS! |</a>
-            <a class="top-menu-items" href="4_quienes_somos.html">¿QUIENES SOMOS? |</a>
-            <a class="top-menu-items" href="2_novedades.html">NOVEDADES |</a>
-            <a class="top-menu-items" href="../extranet/2_enviar_consulta.html">HACE TU CONSULTA |</a>
-            <a class="top-menu-items" href="3_preguntas_frecuentes.html">PREGUNTAS FRECUENTES</a>
+            <a  href="1_inicio.html">INICIO |</a>
+            <a  href="7_iniciar-sesion.html">MI CUENTA |</a>
+            <a  href="../extranet/5_formulario_postulante.html">SE PARTE DE NOSOTROS! |</a>
+            <a  href="4_quienes_somos.html">¿QUIENES SOMOS? |</a>
+            <a  href="2_novedades.html">NOVEDADES |</a>
+            <a  href="../extranet/2_enviar_consulta.html">HACE TU CONSULTA |</a>
+            <a  href="3_preguntas_frecuentes.html">PREGUNTAS FRECUENTES</a>
         </nav>
 
-        <div> <!--CONTENEDOR DE REGISTRO-->
+        <!--CONTENEDOR DE REGISTRO-->
+        <div> 
 
             <h1>REGISTRARSE</h1>
 
             <form>
                 <label for="nombre">Nombre</label><br>
                 <input aria-label="Nombre" type="nombre" id="nombre" name="nombre" placeholder="Ingrese su nombre" required><br>
+                
                 <label for="apellido">Apellido</label><br>
                 <input aria-label="Apellido" type="apellido" id="apellido" name="apellido" placeholder="Ingrese su apellido" required><br>
+                
                 <label for="fechaNacimiento">Fecha de Nacimiento</label><br>
                 <input aria-label="Fecha de Nacimiento" type="fechaNacimiento" id="fechaNacimiento" name="fechaNacimiento" placeholder="Ingrese su fecha de nacimiento" required><br>
+                
                 <label for="dni">DNI</label><br>
                 <input aria-label="DNI" type="dni" id="dni" name="dni" placeholder="Ingrese su DNI" required><br>
+                
                 <label for="domicilio">Domicilio</label><br>
                 <input aria-label="Domicilio" type="domicilio" id="domicilio" name="domicilio" placeholder="Ingrese su domicilio" required><br>
+                
                 <label for="localidad">Localidad</label><br>
                 <input aria-label="Localidad" type="localidad" id="localidad" name="localidad" placeholder="Ingrese su localidad" required><br>
+                
                 <label for="numeroCelular">Numero de Celular</label><br>
                 <input aria-label="Numero de Celular" type="numeroCelular" id="numeroCelular" name="numeroCelular" placeholder="Ingrese su numero de celular" required><br>
+                
                 <label for="email">Email</label><br>
-                <input aria-label="Email" type="email" id="email" name="email" placeholder="Ingrese su email" required><br>
+                <input aria-label="Email" type="email" id="email" name="email" placeholder="Ingrese su email" required><br><br>
+                
                 <!--BOTONES-->
-                <button type="submit"> <a href="8_contraseña_registrarse.html">SIGUIENTE</a></button>
-                <button type="submit"> <a href="7_iniciar-sesion.html">VOLVER</a></button>
+                <button type="submit"><a href="8_contraseña_registrarse.html">SIGUIENTE</button></a>
+                <button type="button"><a href="7_iniciar-sesion.html">VOLVER</button><br></a>
+
+                <img src="../assets/iconos/michi.png" alt="gatito_registro" width="200"><br>
+                <!--ENLACE A OTRA PAGINA-->
+                <img src="../assets/iconos/patita.png" alt="patita">
+                <a href="7_iniciar-sesion.html">¿Ya tienes cuenta? Inicia Sesion</a><br><br>
+
             </form> 
-
-            <img src="../assets/iconos/michi.png" alt="gatito_registro" width="200"><br>
-            <!--ENLACE A OTRA PAGINA-->
-            <img src="../assets/iconos/patita.png" alt="patita">
-            <a href="7_iniciar-sesion.html">¿Ya tienes cuenta? Inicia Sesion</a><br><br>
-
         </div>   
     </body>
 </html>
