@@ -1,1 +1,45 @@
-p {font-size: 20px}
+body.home_page { /*MODIFICACION SOLO EN EL CUERPO DE LA PAGINA PRINCIPAL*/
+    margin: 0;
+    padding: 0;
+    background-image: url('../assets/estilos/fondo\ INICIO.jpg');
+    background-size: cover;       /* Hace que la imagen cubra toda la pantalla */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center;  /* Centra la imagen */
+    height: 100vh;                /* Asegura que la altura cubra toda la ventana del navegador */
+}
+
+.menu_navegacion {
+    color: white;
+}
+
+.estrellas_decoracion {
+    text-align: center;
+}
+
+.titulo_inicio_descripcion {
+    h1 {
+        color: white;
+        text-align: center;
+        font-size: 700%;
+        margin: 0%;
+    }
+
+    p {
+        color: white;
+        text-align: center;
+    }
+}
+
+.busqueda_mascota_rapida {
+    text-align: center; /*Alineo el texto en el centro de la pantalla*/
+}
+
+.redes_sociales {
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.contactos {
+    color: white;
+    text-align: center;
+}
