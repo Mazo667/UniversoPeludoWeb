@@ -8,7 +8,7 @@
     </head>
     <body> 
         <!--MENU DE NAVEGACION-->
-        <nav>
+        <nav class="menu_navegacion">
             <a  href="1_inicio.html">INICIO |</a>
             <a  href="7_iniciar-sesion.html">MI CUENTA |</a>
             <a  href="../extranet/5_formulario_postulante.html">SE PARTE DE NOSOTROS! |</a>
@@ -18,37 +18,27 @@
             <a  href="3_preguntas_frecuentes.html">PREGUNTAS FRECUENTES</a>
         </nav>
         <!--CONTENEDOR LOGUEO-->
-        <div> 
+        <div class="formularios"> 
             <h1>INICIA SESION O REGISTRATE</h1>
 
-            <form>
-                <table border="1">
-                    <tbody>
-                        <tr>
-                            <td>
-                                <label for="email">Ingrese correo electronico</label><br>
-                                <input aria-label="Email" type="email" id="email" name="email" placeholder="Ingrese su email" required><br>
-                                <label for="password">Ingrese contraseña</label><br>
-                                <input aria-label="Contraseña" type="password" id="password" name="password" placeholder="Ingrese su contraseña" required><br><br>
-                                <img src="../assets/iconos/patita.png" alt="patita" width="20">
-                                <a href="">¿Olvidaste tu contraseña? | </a> <!-- se manda un gmail a la cuenta registrada para hacer el cambio de contraseña, no creo que tenga que hacer referencia a nada por el momento, o si?-->
-                                <a href="6_registrarse.html">¿No tienes cuenta? Registrate</a> 
-                            </td>
-                            <td>
-                                <img src="../assets/iconos/usuario.png" alt="usuario" width="100">
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-
+            <form class="iniciar_sesion">
+                <label for="email">Ingrese correo electronico</label><br>
+                <input aria-label="Email" type="email" id="email" name="email" placeholder="Ingrese su email" required><br>
+                <label for="password">Ingrese contraseña</label><br>
+                <input aria-label="Contraseña" type="password" id="password" name="password" placeholder="Ingrese su contraseña" required><br><br>
+                <img src="../assets/iconos/patita.png" alt="patita" width="20">
+                <a href="">¿Olvidaste tu contraseña? | </a> <!-- se manda un gmail a la cuenta registrada para hacer el cambio de contraseña, no creo que tenga que hacer referencia a nada por el momento, o si?-->
+                <a href="6_registrarse.html">¿No tienes cuenta? Registrate</a>
+                
                 <!--BOTONES-->
                 <button type="submit"><a href="../extranet/1_mi_cuenta.html">ACEPTAR<img src="../assets/iconos/aceptar.png" alt="aceptar" width="20"></button></a>
                 <button type="button"><a href="">CANCELAR<img src="../assets/iconos/cancelar.png" alt="cancelar" width="20"></button></a>
             </form>
+            <img id="logo_usuario"  src="../assets/iconos/usuario.png" alt="usuario" width="100"><br>
         </div><br>
 
         <!--REDES SOCIALES-->
-        <div>   
+        <div class="redes_sociales">   
             <a href=""> <img src="../assets/iconos/instagram.png" alt="instagram">universoPeludo</a>
             <a href=""><img src="../assets/iconos/facebook.png" alt="facebook">refugioUniversoPeludo</a>
             <a href=""> <img src="../assets/iconos/gmail.png" alt="gmail">universoPeludo@gmail.com</a>

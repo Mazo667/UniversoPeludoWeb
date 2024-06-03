@@ -1,15 +1,49 @@
 body.home_page { /*MODIFICACION SOLO EN EL CUERPO DE LA PAGINA PRINCIPAL*/
     margin: 0;
     padding: 0;
-    background-image: url('../assets/estilos/fondo\ INICIO.jpg');
+    background-image: url('../assets/imagenes/fondo\ INICIO.jpg'); /*IMAGEN DE FONDO*/
     background-size: cover;       /* Hace que la imagen cubra toda la pantalla */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     background-position: center;  /* Centra la imagen */
     height: 100vh;                /* Asegura que la altura cubra toda la ventana del navegador */
 }
 
+body.quienes_somos { /*MODIFICACION SOLO EN EL CUERPO DE LA PAGINA "QUIENES SOMOS"*/
+    margin: 0;
+    padding: 0;
+    background-image: url("../assets/imagenes/fondo\ Quienes_Somos.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    h1 {
+        color: white;
+        text-align: center;
+        font-size: 700%;
+        margin: 0%;
+    }
+    p {
+        font-weight: 100;
+        color: white;
+        text-align: center;
+    }
+}
+
+body { /*CUERPO GENERICO DEL RESTO DE PAGINAS HTML*/
+    margin: 0;
+    padding: 0;
+    background-image: url("../assets/imagenes/FONDO\ GRADIENTE.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+
 .menu_navegacion {
     color: white;
+    text-align: center;
+    padding: 10px 20px;
+    word-spacing: 10px;
 }
 
 .estrellas_decoracion {
@@ -32,14 +66,102 @@ body.home_page { /*MODIFICACION SOLO EN EL CUERPO DE LA PAGINA PRINCIPAL*/
 
 .busqueda_mascota_rapida {
     text-align: center; /*Alineo el texto en el centro de la pantalla*/
+    display: block;
+    color: white;
 }
 
 .redes_sociales {
     text-align: center;
     color: rgb(255, 255, 255);
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+    padding: 20px 0;
 }
 
 .contactos {
-    color: white;
     text-align: center;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.preguntas_frecuentes {
+    margin: 50px; /*Indica el margen*/
+    font-size: 120%;
+    h4 {
+        color: black;
+        font-weight: bold; /*Aplica un resaltado al texto*/
+    }
+    li {
+        color: white;
+    }
+}
+
+.formularios {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    
+    h1 {
+        font-size: 40px ;
+        color: white;
+    }
+
+    background-image: url("../assets/imagenes/Rectangle\ 5.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 642px 746px;
+
+    label {
+        color: white;
+        font-size: 130%;
+        text-align: center;
+        align-items: center;
+    }
+    input {
+        border-radius: 5px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        cursor: pointer; /*Tranforma el puntero en una manito con el indice*/
+        width: 300px;
+        height: 5px;
+        text-align: center;
+        align-items: center;
+    }
+    input:focus, textarea:focus { /*Sombrea la caja cuando se selecciona para ingresar datos*/
+        box-shadow:7px 7px 10px rgba(0, 0, 0, 0.5);
+    }
+    input:hover, textarea:hover {/*Se contornea la caja cuando esta el cursor encima*/
+        border-color: rgb(57, 54, 60);
+    }
+    input:valid, textarea:valid {
+        background-color: rgb(0, 255, 115);
+        border-color: black;
+    }
+    /*input:invalid, textarea:invalid { ------Lo podemos agregar cuando hagamos las validaciones con JS
+        background-color: rgb(253, 76, 76);
+        border-color: black;
+    }*/
+    input::placeholder, textarea::placeholder {
+        color: rgba(58, 54, 54, 0.663); /* Negro con 50% de transparencia */
+    }
+    button[type="submit"], button[type="reset"], button[type="button"],button[type="menu"] {
+        background-color: rgb(61, 58, 63);
+        color: white;
+        border-radius: 5px;
+        margin: 0;
+    }
+    .iniciar_sesion {
+        grid-template-columns: 1fr auto;
+        align-items: center;
+        gap: 20px;
+        
+        #logo_usuario {
+        vertical-align: middle;
+    }
+    }
 }
