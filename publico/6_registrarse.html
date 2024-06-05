@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Registrarse</title>
         <link rel="stylesheet" href="../estilos/estilos.css">
+        <script src="../scripting/lenguajeScripting.js"></script>
     </head>
     <body>
         <!--MENU DE NAVEGACION-->
@@ -23,7 +24,7 @@
 
             <h1>REGISTRARSE</h1>
 
-            <form>
+            <form id="registro">
                 <label for="nombre">Nombre</label><br>
                 <input aria-label="Nombre" type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required><br>
                 
@@ -49,13 +50,16 @@
                 <input aria-label="Email" type="email" id="email" name="email" placeholder="Ingrese su email" required><br><br>
                 
                 <!--BOTONES-->
-                <button type="submit"><a href="8_contraseña_registrarse.html">SIGUIENTE</button></a>
-                <button type="button"><a href="7_iniciar-sesion.html">VOLVER</button><br></a>
+                <button type="submit">SIGUIENTE</button>
+                <button type="button" onclick="window.location.href='7_iniciar-sesion'">VOLVER</button><br>
 
                 <img src="../assets/iconos/michi.png" alt="gatito_registro" width="200"><br>
                 <!--ENLACE A OTRA PAGINA-->
                 <img src="../assets/iconos/patita.png" alt="patita">
                 <a href="7_iniciar-sesion.html">¿Ya tienes cuenta? Inicia Sesion</a><br><br>
+
+                <!-- Mensaje de error -->
+                <p id="mensajeError" style="color: red;"></p>
 
             </form> 
         </div>   
