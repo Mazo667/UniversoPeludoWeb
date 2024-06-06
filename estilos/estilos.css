@@ -4,35 +4,65 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Viaoda+Libre&family=Voltaire&family=Work+Sans:ital,wght@0,100..900; 1,100..900&display=intercambio');
 
 body.home_page { /*MODIFICACION SOLO EN EL CUERPO DE LA PAGINA PRINCIPAL*/
+    text-align: center;
+    align-items: center;
     margin: 0;
-    padding: 0;
     background-image: url('../assets/imagenes/fondo\ INICIO.jpg'); /*IMAGEN DE FONDO*/
     background-size: cover;       /* Hace que la imagen cubra toda la pantalla */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     background-position: center;  /* Centra la imagen */
     height: 100vh;                /* Asegura que la altura cubra toda la ventana del navegador */
-    width: 100vw;
+    width: 100vw;  
 
-   .titulo_inicio_descripcion {
-        h1 {
+    div.titulo_inicio_descripcion {
+        clear: both;
+    }
+    
+    h1.titulo_inicio_descripcion {
             color: white;
             text-align: center;
             font-size: 10em;
             margin: 0;
             font-family:'Viaoda Libre';
             font-weight: 1;
-        }
-        p {
+    }
+
+    p.titulo_inicio_descripcion {
             color: white;
             text-align: center;
             font-family: 'Work Sans';
             margin: 0;
-            font-size: 1.3em;
-        }
+            font-size: 1.2em;
+    }
+    
+    .busqueda_mascota_rapida {
+        display: inline-block; 
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: center; 
+        color: white;
+        padding: 10px 20px;
+        font-family: 'Voltaire';
+        font-weight: bold;
+        font-size: 1.3em;
+        background-color: rgba(128, 128, 128, 0.566);
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 20px;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+        width: 150px;
+        height: 200px;
+    } 
+
+    .iconos {
+        max-width: 100%;
+        max-height: 100%;
     }
 }
 
-body.quienes_somos { /*MODIFICACION SOLO EN EL CUERPO DE LA PAGINA "QUIENES SOMOS"*/
+body.historia_refugio { /*MODIFICACION SOLO EN EL CUERPO DE LA PAGINA "QUIENES SOMOS"*/
+    text-align: center;
+    align-items: center;
     margin: 0;
     padding: 0;
     background-image: url("../assets/imagenes/fondo\ Quienes_Somos.jpg");
@@ -41,7 +71,12 @@ body.quienes_somos { /*MODIFICACION SOLO EN EL CUERPO DE LA PAGINA "QUIENES SOMO
     background-position: center;
     height: 100vh;
     width: 100vw;
-    h1 {
+
+    div.quienes_somos {
+        clear: both;
+    }
+
+    h1.quienes_somos {
         color: white;
         text-align: center;
         font-size: 10em;
@@ -49,7 +84,7 @@ body.quienes_somos { /*MODIFICACION SOLO EN EL CUERPO DE LA PAGINA "QUIENES SOMO
         font-family: 'Viaoda Libre';
         font-weight: 1;
     }
-    p {
+    p.quienes_somos {
         color: white;
         text-align: center;
         font-family: 'Work Sans';
@@ -59,8 +94,9 @@ body.quienes_somos { /*MODIFICACION SOLO EN EL CUERPO DE LA PAGINA "QUIENES SOMO
 }
 
 body { /*CUERPO GENERICO DEL RESTO DE PAGINAS HTML*/
+    text-align: center;
+    align-items: center;
     margin: 0;
-    padding: 0;
     background-image: url("../assets/imagenes/FONDO\ GRADIENTE.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -75,23 +111,19 @@ body { /*CUERPO GENERICO DEL RESTO DE PAGINAS HTML*/
     background-position: center;
     background-size: cover;
 
-    color: white;
-    text-align: center;
-    padding: 10px 20px;
-    word-spacing: 10px;
-    font-family: 'Work Sans';
-    font-weight: bold;
-    font-size: 1em;
+    p {
+        margin: 0;
+        display: inline-block;
+        color: white;
+        padding: 10px 20px;
+        font-family: 'Work Sans';
+        font-weight: bold;
+        font-size: 1em;
+    }
 }
 
 .estrellas_decoracion {
     text-align: center;
-}
-
-.busqueda_mascota_rapida {
-    text-align: center; /*Alineo el texto en el centro de la pantalla*/
-    display: block;
-    color: white;
 }
 
 .redes_sociales {
@@ -109,51 +141,43 @@ body { /*CUERPO GENERICO DEL RESTO DE PAGINAS HTML*/
     text-align: center;
     color: white;
     position: absolute;
-    bottom: 20px;
+    bottom: 40px;
     width: 100%;
     padding: 20px 0;
     font-family: 'Voltaire';
-    margin: 0;
 }
 
 .preguntas_frecuentes {
     margin: 50px; /*Indica el margen*/
     font-size: 1.2em;
     h4 {
+        text-align: left;
         color: black;
         font-weight: bold; /*Aplica un resaltado al texto*/
     }
     li {
+        text-align: left;
         color: white;
     }
 }
 
-.formularios { /*FORMULARIOS GENERICOS*/
+.formularios {
 
-    background-color: rgba(87, 83, 81, 0.643);
+    background-color: rgba(37, 37, 37, 0.505);
     background-position: center;
-    background-size: 100px 100px;
-    text-align: center;
-    
-    h1,h2,h3,h4,h5,h6 {
-        font-family: 'Inter';
-        color: rgb(255, 255, 255);
-        font-weight: bold;
-        text-align: center;
+    border-radius: 20px;
+    box-shadow:5px 5px 15px rgba(0, 0, 0, 0.5);
+
+    form.iniciar_sesion {
+        text-align: left;
     }
-    p {
+    .logo_usuario {
+        position: right;
+    }
+    h1 {
         color: white;
         text-align: center;
         font-family: 'Inter';
-        margin: 0;
-        font-size: 1.2em;
-    }
-    label {
-        font-family: 'Inter';
-        color: white;
-        font-size: 1em;
-        text-align: center;
-        align-items: center;
     }
     input {
         font-family: 'Inter';
@@ -161,42 +185,27 @@ body { /*CUERPO GENERICO DEL RESTO DE PAGINAS HTML*/
         padding: 10px;
         border: 1px solid #ccc;
         border-radius: 5px;
-        cursor: pointer; /*Tranforma el puntero en una manito con el indice*/
+        cursor: pointer; 
         width: 300px;
         height: 5px;
         text-align: center;
         align-items: center;
     }
-    textarea {
-        padding: 20px;
-        border: 1px solid #ccc;
-        border-radius: 10px;
-        cursor: pointer; /*Tranforma el puntero en una manito con el indice*/
-    }
-    input:focus, textarea:focus { /*Sombrea la caja cuando se selecciona para ingresar datos*/
-        box-shadow:7px 7px 10px rgba(0, 0, 0, 0.5);
-    }
-    input:hover, textarea:hover {/*Se contornea la caja cuando esta el cursor encima*/
-        border-color: rgb(57, 54, 60);
-    }
-    input:valid, textarea:valid {
-        background-color: rgb(0, 255, 115);
-        border-color: black;
-    }
-    /*input:invalid, textarea:invalid { ------Lo podemos agregar cuando hagamos las validaciones con JS
-        background-color: rgb(253, 76, 76);
-        border-color: black;
-    }*/
-    input::placeholder, textarea::placeholder {
-        color: rgba(58, 54, 54, 0.663); /* Negro con 50% de transparencia */
+    label {
+        color: white;
+        text-align: right;
         font-family: 'Inter';
-    }
-    button[type="submit"], button[type="reset"], button[type="button"],button[type="menu"] {
+    } 
+
+    button[type="submit"], button[type="reset"], button[type="button"],button[type="menu"]{
         background-color: rgb(61, 58, 63);
         color: white;
         border-radius: 5px;
         margin: 0;
         font-family: 'Inter';
         font-weight: bold;
+    }
+    .botones_extras {
+        position: right;
     }
 }

@@ -1,3 +1,15 @@
+function esDNIValido (dni){
+    const validacionDNI = /^[0-9](8,9)$/;
+    return validacionDNI.test(dni);
+}
+
+
+
+
+
+
+
+
 // Espera a que el documento esté completamente cargado
 document.addEventListener("DOMContentLoaded", function() {
     // Obtén el formulario por su ID
@@ -5,8 +17,8 @@ document.addEventListener("DOMContentLoaded", function() {
     const errorMessage = document.getElementById('mensajeError'); // Elemento para mostrar mensajes de error
 
     // Añade un evento 'submit' al formulario
-    if (form) {
-        form.addEventListener('submit', function(event) {
+
+            form.addEventListener('submit', function(event) {
             event.preventDefault(); // Previene el envío del formulario
 
             // Valores de los campos
@@ -51,14 +63,14 @@ document.addEventListener("DOMContentLoaded", function() {
                 window.location.href = '8_contraseña_registrarse.html';
             }
         });
-    }
+    
 
     // VALIDACION DEL FORMULARIO CONTRASEÑA ------------------------------------------------------------------------------------------------------------------------
     
     const registrar_contraseña = document.getElementById('registrar_contraseña');
     const mensajeErrorContraseña = document.getElementById('mensajeErrorContraseña');
 
-    if (registrar_contraseña) {
+
         registrar_contraseña.addEventListener('submit', function(event) {
             event.preventDefault();
 
@@ -85,7 +97,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 window.location.href = '7_iniciar-sesion.html';
             }
         });
-    }
+    
 
     function esMayorDeEdad(fechaNacimiento) { // Funcion para validar que el usuario sea mayor de edad
         const fechaActual = new Date();
