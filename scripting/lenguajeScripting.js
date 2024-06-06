@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // VALIDACION DEL FORMULARIO CONTRASEÑA ------------------------------------------------------------------------------------------------------------------------
     
-    const registrar_contraseña = document.getElementById('registro_contraseña');
+    const registrar_contraseña = document.getElementById('registrar_contraseña');
     const mensajeErrorContraseña = document.getElementById('mensajeErrorContraseña');
 
     if (registrar_contraseña) {
