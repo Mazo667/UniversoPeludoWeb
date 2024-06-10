@@ -12,12 +12,14 @@ body.home_page { /*MODIFICACION SOLO EN EL CUERPO DE LA PAGINA PRINCIPAL*/
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     background-position: center;  /* Centra la imagen */
     height: 100vh;                /* Asegura que la altura cubra toda la ventana del navegador */
-    width: 100vw;  
+    width: 100vw;
 
+    /*
     div.titulo_inicio_descripcion {
         clear: both;
     }
-    
+    */
+
     h1.titulo_inicio_descripcion {
             color: white;
             text-align: center;
@@ -34,14 +36,17 @@ body.home_page { /*MODIFICACION SOLO EN EL CUERPO DE LA PAGINA PRINCIPAL*/
             margin: 0;
             font-size: 1.2em;
     }
-    
-    .busqueda_mascota_rapida {
-        display: inline-block; 
-        flex-direction: column; 
-        align-items: center; 
-        justify-content: center; 
+
+    .container_busqueda_rapida{
+      display: flex;
+      justify-content: center;
+      align-items: stretch;
+    }
+
+    .card_busqueda_mascota_rapida {
+        padding: 10px 10px;
         color: white;
-        padding: 10px 20px;
+        margin: 10px;
         font-family: 'Voltaire';
         font-weight: bold;
         font-size: 1.3em;
@@ -52,7 +57,7 @@ body.home_page { /*MODIFICACION SOLO EN EL CUERPO DE LA PAGINA PRINCIPAL*/
         box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
         width: 150px;
         height: 200px;
-    } 
+    }
 
     .iconos {
         max-width: 100%;
@@ -102,24 +107,39 @@ body { /*CUERPO GENERICO DEL RESTO DE PAGINAS HTML*/
     background-repeat: no-repeat;
     background-position: center;
     height: 100vh;
-    width: 100vw;   
+    width: 100vw;
 }
 
 .menu_navegacion {
-    background-image: url('../assets/imagenes/Rectangle\ 50.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+  background-color: #262626;
+  overflow: hidden;
+  width: auto;
+}
 
-    p {
-        margin: 0;
-        display: inline-block;
-        color: white;
-        padding: 10px 20px;
-        font-family: 'Work Sans';
-        font-weight: bold;
-        font-size: 1em;
-    }
+.menu_navegacion a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px 20px 10px;
+    margin: 0;
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    font-family: 'Work Sans';
+    font-weight: bold;
+    font-size: 1em;
+}
+
+/* Cambiar de color cuando coloco el click por encima */
+.menu_navegacion a:hover {
+  background-color: #424242;
+  color: white;
+}
+
+/* Cambiar color cuando este activo */
+.menu_navegacion a.active {
+  background-color: #424242;
+  color: white;
 }
 
 .estrellas_decoracion {
@@ -185,7 +205,7 @@ body { /*CUERPO GENERICO DEL RESTO DE PAGINAS HTML*/
         padding: 10px;
         border: 1px solid #ccc;
         border-radius: 5px;
-        cursor: pointer; 
+        cursor: pointer;
         width: 300px;
         height: 5px;
         text-align: center;
@@ -195,7 +215,7 @@ body { /*CUERPO GENERICO DEL RESTO DE PAGINAS HTML*/
         color: white;
         text-align: right;
         font-family: 'Inter';
-    } 
+    }
 
     button[type="submit"], button[type="reset"], button[type="button"],button[type="menu"]{
         background-color: rgb(61, 58, 63);

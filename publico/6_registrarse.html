@@ -17,49 +17,49 @@
     <body>
         <!--MENU DE NAVEGACION-->
         <nav class="menu_navegacion">
-            <p><a  href="1_inicio.html">INICIO </a></p>
-            <p><a  href="7_iniciar-sesion.html">MI CUENTA </a></p>
-            <p><a  href="../extranet/5_formulario_postulante.html">SE PARTE DE NOSOTROS! </a></p>
-            <p><a  href="4_quienes_somos.html">¿QUIENES SOMOS? </a></p>
-            <p><a  href="2_novedades.html">NOVEDADES </a></p>
-            <p><a  href="../extranet/2_enviar_consulta.html">HACE TU CONSULTA </a></p>
-            <p><a  href="3_preguntas_frecuentes.html">PREGUNTAS FRECUENTES</a></p>
+            <a href="1_inicio.html">INICIO </a>
+            <a href="7_iniciar-sesion.html">MI CUENTA </a>
+            <a href="../extranet/5_formulario_postulante.html">SE PARTE DE NOSOTROS! </a>
+            <a href="4_quienes_somos.html">¿QUIENES SOMOS? </a>
+            <a href="2_novedades.html">NOVEDADES </a>
+            <a href="../extranet/2_enviar_consulta.html">HACE TU CONSULTA </a>
+            <a href="3_preguntas_frecuentes.html">PREGUNTAS FRECUENTES</a>
         </nav>
-     
+
         <!--CONTENEDOR DE REGISTRO-->
-        <div class="formularios"> 
+        <div class="formularios">
 
             <h1>REGISTRARSE</h1>
 
             <form id="registro">
                 <label for="nombre">Nombre</label><br>
                 <input aria-label="Nombre" type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required><br>
-                
+
                 <label for="apellido">Apellido</label><br>
                 <input aria-label="Apellido" type="text" id="apellido" name="apellido" placeholder="Ingrese su apellido" required><br>
-                
+
                 <label for="fechaNacimiento">Fecha de Nacimiento</label><br>
                 <input aria-label="Fecha de Nacimiento" type="date" id="fechaNacimiento" name="fechaNacimiento" placeholder="Ingrese su fecha de nacimiento" required><br>
-                
+
                 <label for="dni">DNI</label><br>
                 <input aria-label="DNI" type="number" id="dni" name="dni" placeholder="Ingrese su DNI" required><br>
-                
+
                 <label for="domicilio">Domicilio</label><br>
                 <input aria-label="Domicilio" type="text" id="domicilio" name="domicilio" placeholder="Ingrese su domicilio" required><br>
-                
+
                 <label for="localidad">Localidad</label><br>
                 <input aria-label="Localidad" type="text" id="localidad" name="localidad" placeholder="Ingrese su localidad" required><br>
-                
+
                 <label for="numeroCelular">Numero de Celular</label><br>
                 <input aria-label="Numero de Celular" type="number" id="numeroCelular" name="numeroCelular" placeholder="Ingrese su numero de celular" required><br>
-                
+
                 <label for="email">Email</label><br>
                 <input aria-label="Email" type="email" id="email" name="email" placeholder="Ingrese su email" required><br><br>
-                
+
                 <!--BOTONES-->
                 <button type="submit">SIGUIENTE</button>
                 <button type="button" onclick="window.location.href='7_iniciar-sesion'">CANCELAR</button><br>
-                
+
                 <img src="../assets/iconos/michi.png" alt="gatito_registro" width="200"><br>
                 <!--ENLACE A OTRA PAGINA-->
                 <img src="../assets/iconos/patita.png" alt="patita">
@@ -67,8 +67,8 @@
 
                 <!-- Mensaje de error -->
                 <p id="mensajeError"></p>
-               
-            </form> 
-        </div>   
+
+            </form>
+        </div>
     </body>
 </html>
