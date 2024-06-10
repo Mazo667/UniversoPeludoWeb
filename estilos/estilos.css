@@ -67,6 +67,7 @@ body {
     line-height: var(--line-height-base);
     color: var(--primary-color);
     align-items: center;
+    min-height: 100vh;
 }
 
 body.home_page{
@@ -85,7 +86,7 @@ body.historia_refugio{
     background-position: center;
 }
 
-body.novedades{
+body.gradiente{
     background-image: url("../assets/imagenes/FONDO\ GRADIENTE.png");
     background-size: cover;
     background-attachment: fixed;
@@ -130,6 +131,7 @@ a.redes_sociales {
 form {
     margin: 20px;
 }
+
 
 label {
     display: block;
@@ -219,17 +221,17 @@ input[type="text"], input[type="email"], textarea {
 }
 
 .redes_sociales {
-    position: fixed;
+    position: relative;
     justify-content: center;
     text-align: center;
     color: rgb(255, 255, 255);
     width: 100%;
-    padding-top: 10px;
-    padding-bottom: 4px;
     font-family: 'Voltaire';
     font-weight: bold;
     bottom: 0;
+    margin-top: 2px;
 }
+
 .redes_sociales a {
     padding-right: 5%;
 }
@@ -254,6 +256,20 @@ input[type="text"], input[type="email"], textarea {
     line-height: 1.0;
     margin: 0;
     font-weight: 1;
+}
+
+.preguntas_frecuentes{
+    align-items: start;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 1%;
+    margin-bottom: 2%;
+}
+
+.preguntas_frecuentes h4{
+    font-size: 1.3em;
+    font-weight: bold;
+    color: var(--secondary-color);
 }
 
 /*
@@ -294,6 +310,12 @@ input[type="text"], input[type="email"], textarea {
 .menu_navegacion a.active {
     background-color: #424242;
     color: white;
+}
+
+footer {
+    background-color: var(--secondary-color);
+    text-align: center;
+    color: #fff;
 }
 
 /* Cambiar de color cuando coloco el click encima */
