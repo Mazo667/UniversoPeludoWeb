@@ -3,124 +3,278 @@
 @import url('https://fonts.googleapis.com/css2?family=Viaoda+Libre&family=Voltaire&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Viaoda+Libre&family=Voltaire&family=Work+Sans:ital,wght@0,100..900; 1,100..900&display=intercambio');
 
-body.home_page { /*MODIFICACION SOLO EN EL CUERPO DE LA PAGINA PRINCIPAL*/
-    text-align: center;
-    align-items: center;
-    margin: 0;
-    background-image: url('../assets/imagenes/fondo\ INICIO.jpg'); /*IMAGEN DE FONDO*/
-    background-size: cover;       /* Hace que la imagen cubra toda la pantalla */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    background-position: center;  /* Centra la imagen */
-    height: 100vh;                /* Asegura que la altura cubra toda la ventana del navegador */
-    width: 100vw;
+/* 
+    Normalize o Reset CSS
+    Comienza con una sección de normalize o reset CSS para establecer un conjunto de
+    estilos predeterminados para todos los elementos HTML. Esto ayuda a eliminar los estilos
+    predeterminados del navegador y a establecer una base común para todos los elementos.
+*/
 
-    /*
-    div.titulo_inicio_descripcion {
-        clear: both;
-    }
-    */
-
-    h1.titulo_inicio_descripcion {
-            color: white;
-            text-align: center;
-            font-size: 10em;
-            margin: 0;
-            font-family:'Viaoda Libre';
-            font-weight: 1;
-    }
-
-    p.titulo_inicio_descripcion {
-            color: white;
-            text-align: center;
-            font-family: 'Work Sans';
-            margin: 0;
-            font-size: 1.2em;
-    }
-
-    .container_busqueda_rapida{
-      display: flex;
-      justify-content: center;
-      align-items: stretch;
-    }
-
-    .card_busqueda_mascota_rapida {
-        padding: 10px 10px;
-        color: white;
-        margin: 10px;
-        font-family: 'Voltaire';
-        font-weight: bold;
-        font-size: 1.3em;
-        background-color: rgba(128, 128, 128, 0.566);
-        background-position: center;
-        background-repeat: no-repeat;
-        border-radius: 20px;
-        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
-        width: 150px;
-        height: 200px;
-    }
-
-    .iconos {
-        max-width: 100%;
-        max-height: 100%;
-    }
-}
-
-body.historia_refugio { /*MODIFICACION SOLO EN EL CUERPO DE LA PAGINA "QUIENES SOMOS"*/
-    text-align: center;
-    align-items: center;
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 1.3;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+a {
+    color: inherit; /* Esto hará que el enlace tome el color del elemento padre */
+}
+
+/* 
+    Variables y mixins
+    Define variables y mixins que se utilizarán en todo el archivo. 
+    Las variables pueden ser utilizadas para definir colores, tamaños de fuente,
+    espaciados, entre otros. Los mixins son funciones que pueden ser utilizadas
+    para aplicar estilos a elementos específicos.
+*/
+
+/* Variables */
+:root {
+    --primary-color: #FFFFFF;
+    --secondary-color: #333;
+    --font-size-base: 16px;
+    --line-height-base: 1.5;
+    --translucido: rgba(128, 128, 128, 0.566);
+}
+
+/* Mixins */
+.mixin-clearfix {
+    &::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+}
+
+/*
+    Estilos globales
+    Define estilos globales que se aplicarán a todos los elementos HTML.
+    Esto puede incluir estilos para el cuerpo, encabezados, párrafos, enlaces, etc.
+*/
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-base);
+    color: var(--primary-color);
+    align-items: center;
+}
+
+body.home_page{
+    background-image: url("../assets/imagenes/fondo\ INICIO.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+body.historia_refugio{
     background-image: url("../assets/imagenes/fondo\ Quienes_Somos.jpg");
     background-size: cover;
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
-    height: 100vh;
-    width: 100vw;
-
-    div.quienes_somos {
-        clear: both;
-    }
-
-    h1.quienes_somos {
-        color: white;
-        text-align: center;
-        font-size: 10em;
-        margin: 0;
-        font-family: 'Viaoda Libre';
-        font-weight: 1;
-    }
-    p.quienes_somos {
-        color: white;
-        text-align: center;
-        font-family: 'Work Sans';
-        margin: 0;
-        font-size: 1.3em;
-    }
 }
 
-body { /*CUERPO GENERICO DEL RESTO DE PAGINAS HTML*/
-    text-align: center;
-    align-items: center;
-    margin: 0;
+body.novedades{
     background-image: url("../assets/imagenes/FONDO\ GRADIENTE.png");
     background-size: cover;
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
-    height: 100vh;
-    width: 100vw;
+}
+  
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    color: var(--primary-color);
 }
 
+p {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+a.redes_sociales {
+    color: var(--primary-color);
+}
+
+/*
+    Componentes
+    Define estilos para componentes específicos que se utilizan en el sitio web.
+*/
+
+/* Botón */
+.button {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Formularios */
+form {
+    margin: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+
+.titulo_inicio_descripcion h1 {
+    color: white;
+    text-align: center;
+    font-size: 6em;
+    line-height: 1.0;
+    margin: 0;
+    font-family: 'Vioda Libre';
+    font-weight: 1;
+}
+
+.titulo_inicio_descripcion p {
+    color: white;
+    text-align: center;
+    font-family: 'Work Sans';
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.container_busqueda_rapida{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    margin: 0%;
+  }
+
+.card_novedad {
+    display: flex;
+    background-color: var(--translucido);
+    padding-right: 5px;
+    margin: 2% 1%;
+    border-radius: 10px;
+}
+
+.card_novedad img {
+    width: 400px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.card_novedad_contenido {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card_novedad_contenido h2 {
+    font-size: 2em;
+    margin: 0;
+}
+
+.card_novedad_contenido p {
+    margin: 0; 
+}
+
+.card_busqueda_mascota_rapida {
+    padding: 10px 10px;
+    text-align: center;
+    color: white;
+    margin: 10px;
+    font-family: 'Voltaire';
+    font-weight: bold;
+    font-size: 1.3em;
+    background-color: rgba(128, 128, 128, 0.566);
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    width: 150px;
+    height: 200px;
+}
+
+.estrellas_decoracion {
+    text-align: center;
+}
+
+.redes_sociales {
+    position: fixed;
+    justify-content: center;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 4px;
+    font-family: 'Voltaire';
+    font-weight: bold;
+    bottom: 0;
+}
+.redes_sociales a {
+    padding-right: 5%;
+}
+
+.contactos{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 20px 0;
+    font-family: 'Voltaire';
+    font-weight: bold;
+}
+
+.iconos {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.novedades h1{
+    color: white;
+    text-align: center;
+    font-size: 3em;
+    line-height: 1.0;
+    margin: 0;
+    font-weight: 1;
+}
+
+/*
+    Layout
+    Define estilos para el diseño del sitio web, como la estructura de la página,
+*/
+
+/* Menu de Navegacion */
+
 .menu_navegacion {
-  background-color: #262626;
-  overflow: hidden;
-  width: auto;
+    background-color: #262626;
+    overflow: hidden;
+    width: auto;
+    display: flex;
+    justify-content: center;
 }
 
 .menu_navegacion a {
-    float: left;
     color: #f2f2f2;
     text-align: center;
-    padding: 10px 20px 10px;
+    padding: 10px 20px;
     margin: 0;
     text-decoration: none;
     display: inline-block;
@@ -132,100 +286,69 @@ body { /*CUERPO GENERICO DEL RESTO DE PAGINAS HTML*/
 
 /* Cambiar de color cuando coloco el click por encima */
 .menu_navegacion a:hover {
-  background-color: #424242;
-  color: white;
+    background-color: #424242;
+    color: white;
 }
 
 /* Cambiar color cuando este activo */
 .menu_navegacion a.active {
-  background-color: #424242;
-  color: white;
-}
-
-.estrellas_decoracion {
-    text-align: center;
-}
-
-.redes_sociales {
-    text-align: center;
-    color: rgb(255, 255, 255);
-    position: absolute;
-    bottom: 0px;
-    width: 100%;
-    padding: 20px 0;
-    font-family: 'Voltaire';
-    font-weight: bold;
-}
-
-.contactos {
-    text-align: center;
+    background-color: #424242;
     color: white;
-    position: absolute;
-    bottom: 40px;
-    width: 100%;
-    padding: 20px 0;
-    font-family: 'Voltaire';
 }
 
-.preguntas_frecuentes {
-    margin: 50px; /*Indica el margen*/
-    font-size: 1.2em;
-    h4 {
-        text-align: left;
-        color: black;
-        font-weight: bold; /*Aplica un resaltado al texto*/
-    }
-    li {
-        text-align: left;
-        color: white;
-    }
+.card_busqueda_mascota_rapida:hover {
+    background-color: rgba(128, 128, 128, 0.8);
 }
 
-.formularios {
 
-    background-color: rgba(37, 37, 37, 0.505);
-    background-position: center;
-    border-radius: 20px;
-    box-shadow:5px 5px 15px rgba(0, 0, 0, 0.5);
+/*
+    Media Queries
+    Define estilos específicos para diferentes tamaños de pantalla utilizando media queries.
+*/
 
-    form.iniciar_sesion {
-        text-align: left;
+@media (max-width: 768px) {
+    /* Estilos para dispositivos móviles */
+    nav {
+      flex-direction: column;
     }
-    .logo_usuario {
-        position: right;
+    .container_busqueda_rapida{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .card_busqueda_mascota_rapida{
+        width: 40%;
     }
     h1 {
-        color: white;
-        text-align: center;
-        font-family: 'Inter';
+        font-size: 5em;
     }
-    input {
-        font-family: 'Inter';
-        border-radius: 5px;
-        padding: 10px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        cursor: pointer;
-        width: 300px;
-        height: 5px;
-        text-align: center;
-        align-items: center;
+    p {
+        font-size: 1em;
     }
-    label {
-        color: white;
-        text-align: right;
-        font-family: 'Inter';
-    }
+}
 
-    button[type="submit"], button[type="reset"], button[type="button"],button[type="menu"]{
-        background-color: rgb(61, 58, 63);
-        color: white;
-        border-radius: 5px;
-        margin: 0;
-        font-family: 'Inter';
-        font-weight: bold;
+@media (min-width: 769px) and (max-width: 1024px) {
+    /* Estilos para tablets */
+    .container_busqueda_rapida{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
-    .botones_extras {
-        position: right;
+    .card_busqueda_mascota_rapida{
+        width: 40%;
+    }
+    h1 {
+        font-size: 5em;
+    }
+    p {
+        font-size: 1em;
+        color: #000;
+    }
+}
+
+@media (min-width: 1025px) {
+    /* Estilos para desktop */
+    header {
+      height: 100px;
     }
 }
