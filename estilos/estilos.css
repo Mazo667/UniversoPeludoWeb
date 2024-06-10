@@ -296,8 +296,11 @@ input[type="text"], input[type="email"], textarea {
     color: white;
 }
 
+/* Cambiar de color cuando coloco el click encima */
+
 .card_busqueda_mascota_rapida:hover {
     background-color: rgba(128, 128, 128, 0.8);
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.5);
 }
 
 
