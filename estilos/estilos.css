@@ -44,6 +44,7 @@ a {
     --font-size-base: 16px;
     --line-height-base: 1.5;
     --translucido: rgba(128, 128, 128, 0.566);
+    --gris_transulucido: rgba(128, 128, 128, 0.566);
 }
 
 /* Mixins */
@@ -114,53 +115,57 @@ a.redes_sociales {
 */
 
 /* Botón */
-.button {
-    background-color: var(--primary-color);
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
+button[type="submit"], button[type="reset"], button[type="button"],button[type="menu"]{
+    background-color: rgb(61, 58, 63);
+    color: white;
+    border-radius: 5px;
+    margin: 0;
+    font-family: 'Inter';
+    font-weight: bold;
 }
 
 .button:hover {
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
 }
 
 /* Formularios */
 form {
-    margin: 20px;
+    margin: 2%;
 }
-
 
 label {
     display: block;
     margin-bottom: 10px;
 }
 
-input[type="text"], input[type="email"], textarea {
+input[type="text"], input[type="email"], input[type="password"], textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
 }
 
-.titulo_inicio_descripcion h1 {
-    color: white;
-    text-align: center;
-    font-size: 6em;
-    line-height: 1.0;
-    margin: 0;
-    font-family: 'Vioda Libre';
-    font-weight: 1;
-}
+.titulo_inicio_descripcion{
 
-.titulo_inicio_descripcion p {
-    color: white;
-    text-align: center;
-    font-family: 'Work Sans';
-    margin: 0;
-    font-size: 1.2em;
+    h1 {
+        color: white;
+        text-align: center;
+        font-size: 6em;
+        line-height: 1.0;
+        margin: 0;
+        font-family: 'Vioda Libre';
+        font-weight: 1;
+    }
+
+    p {
+        color: white;
+        text-align: center;
+        font-family: 'Work Sans';
+        padding-right: 10%;
+        padding-left: 10%;
+        font-size: 1.2em;
+    }
 }
 
 .container_busqueda_rapida{
@@ -168,7 +173,37 @@ input[type="text"], input[type="email"], textarea {
     justify-content: center;
     align-items: stretch;
     margin: 0%;
-  }
+}
+
+.container_translucido{
+    background-color: var(--translucido);
+    padding: 2%;
+    margin: 2% auto;
+    max-width: 70%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.img_usuario_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formulario {
+    flex-basis: 60%;
+    padding: 2%;
+    text-align: start;
+
+    h1 {
+        font-size: 2em;
+        color: var(--primary-color);
+    }
+}
 
 .card_novedad {
     display: flex;
@@ -176,27 +211,28 @@ input[type="text"], input[type="email"], textarea {
     padding-right: 5px;
     margin: 2% 1%;
     border-radius: 10px;
-}
 
-.card_novedad img {
-    width: 400px;
-    height: auto;
-    margin-right: 10px;
+    img {
+        width: 400px;
+        height: auto;
+        margin-right: 10px;
+    }
 }
 
 .card_novedad_contenido {
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
 
-.card_novedad_contenido h2 {
-    font-size: 2em;
-    margin: 0;
-}
+    h2 {
+        font-size: 2em;
+        margin: 0;
+    }
 
-.card_novedad_contenido p {
-    margin: 0; 
+    p {
+        font-size: 1.1em;
+        margin: 0;
+    }
 }
 
 .card_busqueda_mascota_rapida {
@@ -207,7 +243,7 @@ input[type="text"], input[type="email"], textarea {
     font-family: 'Voltaire';
     font-weight: bold;
     font-size: 1.3em;
-    background-color: rgba(128, 128, 128, 0.566);
+    background-color: var(--gris_transulucido);
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 20px;
@@ -230,10 +266,10 @@ input[type="text"], input[type="email"], textarea {
     font-weight: bold;
     bottom: 0;
     margin-top: 2px;
-}
 
-.redes_sociales a {
-    padding-right: 5%;
+    a {
+        padding-right: 5%;
+    }
 }
 
 .contactos{
@@ -264,12 +300,12 @@ input[type="text"], input[type="email"], textarea {
     margin-right: 2%;
     margin-top: 1%;
     margin-bottom: 2%;
-}
 
-.preguntas_frecuentes h4{
-    font-size: 1.3em;
-    font-weight: bold;
-    color: var(--secondary-color);
+    h4 {
+        font-size: 1.3em;
+        font-weight: bold;
+        color: var(--secondary-color);
+    }
 }
 
 /*
@@ -278,16 +314,14 @@ input[type="text"], input[type="email"], textarea {
 */
 
 /* Menu de Navegacion */
-
 .menu_navegacion {
     background-color: #262626;
     overflow: hidden;
     width: auto;
     display: flex;
     justify-content: center;
-}
 
-.menu_navegacion a {
+    a {
     color: #f2f2f2;
     text-align: center;
     padding: 10px 20px;
@@ -298,25 +332,20 @@ input[type="text"], input[type="email"], textarea {
     font-family: 'Work Sans';
     font-weight: bold;
     font-size: 1em;
+    }
+    /* Cambiar de color cuando coloco el click por encima */
+    a:hover{
+        background-color: #424242;
+        color: white;
+    }
+
+    /* Cambiar color cuando este activo */
+    a.active {
+        background-color: #424242;
+        color: white;
+    }
 }
 
-/* Cambiar de color cuando coloco el click por encima */
-.menu_navegacion a:hover {
-    background-color: #424242;
-    color: white;
-}
-
-/* Cambiar color cuando este activo */
-.menu_navegacion a.active {
-    background-color: #424242;
-    color: white;
-}
-
-footer {
-    background-color: var(--secondary-color);
-    text-align: center;
-    color: #fff;
-}
 
 /* Cambiar de color cuando coloco el click encima */
 
@@ -335,6 +364,7 @@ footer {
     /* Estilos para dispositivos móviles */
     nav {
       flex-direction: column;
+      width: 100%;
     }
     .container_busqueda_rapida{
         display: flex;
@@ -349,6 +379,11 @@ footer {
     }
     p {
         font-size: 1em;
+    }
+    .formulario {
+        h1 {
+            font-size: 1.2em;
+        }
     }
 }
 
@@ -368,6 +403,11 @@ footer {
     p {
         font-size: 1em;
         color: #000;
+    }
+    .formulario {
+        h1 {
+            font-size: 1.3em;
+        }
     }
 }
 
