@@ -266,7 +266,7 @@ input[type="text"], input[type="email"], input[type="password"], textarea {
     position: relative;
     bottom: 0;
     width: 100%;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
 }
 
@@ -315,10 +315,14 @@ input[type="text"], input[type="email"], input[type="password"], textarea {
     }
 }
 
+.contenido {
+    margin: 1em;
+    min-height: 77.6vh;
+    padding: 1em;
+}
+
 .footer {
-    position: relative;
-    padding: 20px; /* opcional */
-    clear: both; /* opcional */
+    padding-top: 1%;
 }
 
 /*
