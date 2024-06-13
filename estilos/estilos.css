@@ -272,8 +272,15 @@ input[type="text"], input[type="email"], input[type="password"], textarea {
 
 .redes_sociales {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+
+    a{
+        color: white;
+        font-family: 'Voltaire';
+        font-weight: 1;
+        padding-left: 10%;
+    }
 }
 
 .contactos{
