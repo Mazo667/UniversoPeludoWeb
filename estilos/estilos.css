@@ -168,6 +168,7 @@ input[type="text"], input[type="email"], input[type="password"], textarea {
     justify-content: center;
     align-items: stretch;
     margin: 0%;
+
 }
 
 .container_translucido{
@@ -243,7 +244,7 @@ input[type="text"], input[type="email"], input[type="password"], textarea {
 .card_busqueda_mascota_rapida {
     padding: 10px 10px;
     text-align: center;
-    color: white;
+    color: rgb(0, 0, 0);
     margin: 10px;
     font-family: 'Voltaire';
     font-weight: bold;
@@ -262,9 +263,11 @@ input[type="text"], input[type="email"], input[type="password"], textarea {
 }
 
 .redes_sociales_container {
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 36%;
     padding: 20px;
     text-align: center;
 }
@@ -277,6 +280,9 @@ input[type="text"], input[type="email"], input[type="password"], textarea {
 
 
 .contactos{
+    position: fixed;
+    bottom: 35px;
+    left: 20%;  
     text-align: center;
     color: rgb(255, 255, 255);
     padding: 20px 0;
