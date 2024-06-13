@@ -263,26 +263,23 @@ input[type="text"], input[type="email"], input[type="password"], textarea {
 }
 
 .redes_sociales_container {
-    position: fixed;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 36%;
+    position: relative;
+    bottom: 0;
+    width: 100%;
     padding: 20px;
     text-align: center;
 }
 
 .redes_sociales {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
-
 .contactos{
-    position: fixed;
-    bottom: 35px;
-    left: 20%;  
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     text-align: center;
     color: rgb(255, 255, 255);
     padding: 20px 0;
@@ -316,6 +313,12 @@ input[type="text"], input[type="email"], input[type="password"], textarea {
         font-weight: bold;
         color: var(--secondary-color);
     }
+}
+
+.footer {
+    position: relative;
+    padding: 20px; /* opcional */
+    clear: both; /* opcional */
 }
 
 /*
