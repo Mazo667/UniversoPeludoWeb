@@ -43,7 +43,7 @@ a {
     --secondary-color: #333;
     --font-size-base: 16px;
     --line-height-base: 1.5;
-    --translucido: rgba(128, 128, 128, 0.566);
+    --translucido: rgba(110, 110, 110, 0.726);
     --gris_transulucido: rgba(128, 128, 128, 0.566);
 }
 
@@ -109,6 +109,11 @@ a.redes_sociales {
     color: var(--primary-color);
 }
 
+textarea{
+    border-radius: 10px;
+    outline: none;
+}
+
 /*
     Componentes
     Define estilos para componentes específicos que se utilizan en el sitio web.
@@ -120,15 +125,25 @@ button[type="submit"], button[type="reset"], button[type="button"],button[type="
     color: white;
     border-radius: 5px;
     margin: 0;
-    font-family: 'Inter';
     font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    flex: 1;
+    max-width: 150px; /* Ancho máximo del botón */
 }
 
 /* Formularios */
 form {
-    margin: 2%;
-}
+    margin-top: 1%;
+    align-items: center;
+    text-align: center;
 
+    h4 {
+        text-align: start;
+    }
+}
+    
 label {
     display: block;
     margin-bottom: 10px;
@@ -173,12 +188,11 @@ input[type="text"], input[type="email"], input[type="password"], textarea {
 
 .container_translucido{
     background-color: var(--translucido);
-    padding: 2%;
+    padding: 1%;
     margin: 2% auto;
-    max-width: 70%;
+    max-width: 75%;
     border-radius: 10px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
-    display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
@@ -190,21 +204,10 @@ input[type="text"], input[type="email"], input[type="password"], textarea {
     align-items: center;
 }
 
-.formulario {
-    flex-basis: 60%;
-    padding: 2%;
-    text-align: start;
-
-    h1 {
-        font-size: 2em;
-        color: var(--primary-color);
-    }
-}
-
 .container_datos {
     background-color: var(--primary-color);
     border-radius: 10px;
-    padding: 2%;
+    padding: 1%;
 
     strong, p {
         color: var(--secondary-color);
@@ -379,8 +382,7 @@ input[type="text"], input[type="email"], input[type="password"], textarea {
 }
 
 textarea:active, button:active, textarea:focus-visible, button:focus-visible, input:hover, input:focus-visible {
-    border: none;
-    outline: none;
+    
 }
 
 .button:hover {
@@ -414,9 +416,9 @@ textarea:active, button:active, textarea:focus-visible, button:focus-visible, in
     p {
         font-size: 1em;
     }
-    .formulario {
+    .container_translucido {
         h1 {
-            font-size: 1.2em;
+            font-size: 1em;
         }
     }
 }
@@ -438,7 +440,7 @@ textarea:active, button:active, textarea:focus-visible, button:focus-visible, in
         font-size: 1em;
         color: #000;
     }
-    .formulario {
+    .container_translucido {
         h1 {
             font-size: 1.3em;
         }
