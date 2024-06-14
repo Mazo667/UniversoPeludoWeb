@@ -109,7 +109,7 @@ a.redes_sociales {
     color: var(--primary-color);
 }
 
-textarea{
+textarea, input{
     border-radius: 10px;
     outline: none;
 }
@@ -123,8 +123,8 @@ textarea{
 button[type="submit"], button[type="reset"], button[type="button"],button[type="menu"]{
     background-color: rgb(61, 58, 63);
     color: white;
-    border-radius: 5px;
-    margin: 0;
+    border-radius: 30px;
+    margin-top: 2%;
     font-weight: bold;
     justify-content: center;
     align-items: center;
@@ -138,10 +138,53 @@ form {
     margin-top: 1%;
     align-items: center;
     text-align: center;
+    padding: 1%;
 
     h4 {
         text-align: start;
     }
+    label {
+        text-align: start;
+    }
+}
+
+.formulario_busqueda{
+    background-color: #464646;
+    overflow: hidden;
+    height: 100%;
+    width: 25vw;
+    display: flex;
+    justify-content: start;
+}
+
+.busqueda_lateral {
+    text-align: start;
+    padding: 4%;
+
+    h4 {
+        font-weight: bold;
+    }
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center; /* Ajusta esto según necesites */
+    align-items: center;
+}
+
+.enlinea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+        a {
+            color: #8A96FF;
+            font-weight: bolder;
+        }
+        label {
+            color: white;
+            margin: 3%;
+        }
 }
     
 label {
@@ -190,7 +233,7 @@ input[type="text"], input[type="email"], input[type="password"], textarea {
     background-color: var(--translucido);
     padding: 1%;
     margin: 2% auto;
-    max-width: 75%;
+    max-width: 50%;
     border-radius: 10px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
     flex-wrap: wrap;
@@ -202,6 +245,7 @@ input[type="text"], input[type="email"], input[type="password"], textarea {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 3%;
 }
 
 .container_datos {
@@ -401,6 +445,9 @@ textarea:active, button:active, textarea:focus-visible, button:focus-visible, in
     nav {
       flex-direction: column;
       width: 100%;
+    }
+    .container_translucido{
+        max-width: 100%;
     }
     .container_busqueda_rapida{
         display: flex;

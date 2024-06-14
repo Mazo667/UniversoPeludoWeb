@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="../estilos/estilos.css">
         <script src="../scripting/lenguajeScripting.js"></script>
     </head>
-    <body>
+    <body class="gradiente">
         <!--MENU DE NAVEGACION-->
         <nav class="menu_navegacion">
             <a href="1_inicio.html">INICIO </a>
@@ -21,20 +21,18 @@
 
         <div class="formulario_busqueda">
 
-            <h1>BUSQUEDA DE MASCOTA</h1>
-
             <!--MENU DE BUSQUEDA VERTICAL CON LAS CARACTERISTICAS DE LAS MASCOTAS-->
-            <form>
+            <form class="busqueda_lateral">
 
                 <h4>Especie</h4>
                 <input type="search" placeholder="Roedores...">
-
                 <h4>Sexo</h4>
-                <input type="radio" id="macho" name="sexo" value="macho">
-                <label for="macho">Macho</label><br>
-                <input type="radio" id="hembra" name="sexo" value="hembra">
-                <label for="hembra">Hembra</label>
-
+                <div class="enlinea">
+                    <input type="radio" id="macho" name="sexo" value="macho">
+                    <label for="macho">Macho</label><br>
+                    <input type="radio" id="hembra" name="sexo" value="hembra">
+                    <label for="hembra">Hembra</label>
+                </div>   
                 <h4>Tamaño</h4>
                 <input type="checkbox" id="pequeno" name="tamaño" value="pequeño">
                 <label for="pequeno">Pequeño</label><br>
