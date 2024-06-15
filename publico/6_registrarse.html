@@ -14,7 +14,7 @@
             }
         </script>
     </head>
-    <body>
+    <body class="gradiente">
         <!--MENU DE NAVEGACION-->
         <nav class="menu_navegacion">
             <a href="1_inicio.html">INICIO </a>
@@ -27,11 +27,11 @@
         </nav>
 
         <!--CONTENEDOR DE REGISTRO-->
-        <div class="formularios">
+        <div class="container_translucido">
 
             <h1>REGISTRARSE</h1>
 
-            <form id="registro">
+            <form>
                 <label for="nombre">Nombre</label><br>
                 <input aria-label="Nombre" type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required><br>
 
@@ -57,9 +57,11 @@
                 <input aria-label="Email" type="email" id="email" name="email" placeholder="Ingrese su email" required><br><br>
 
                 <!--BOTONES-->
-                <button type="submit">SIGUIENTE</button>
-                <button type="button" onclick="window.location.href='7_iniciar-sesion'">CANCELAR</button><br>
-
+                <div class="botones">
+                    <button type="submit">SIGUIENTE</button>
+                    <button type="button" onclick="window.location.href='7_iniciar-sesion'">CANCELAR</button><br>
+                </div>
+                
                 <img src="../assets/iconos/michi.png" alt="gatito_registro" width="200"><br>
                 <!--ENLACE A OTRA PAGINA-->
                 <img src="../assets/iconos/patita.png" alt="patita">

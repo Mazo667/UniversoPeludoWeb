@@ -18,66 +18,82 @@
             <a href="../extranet/2_enviar_consulta.html">HACE TU CONSULTA </a>
             <a href="3_preguntas_frecuentes.html">PREGUNTAS FRECUENTES</a>
         </nav>
+        <div class="enlinea2">
+            <div class="formulario_busqueda">
+                <!--MENU DE BUSQUEDA VERTICAL CON LAS CARACTERISTICAS DE LAS MASCOTAS-->
+                <form class="busqueda_lateral">
+                    <div class="buscador">
+                        <h4>Especie</h4>
+                        <input type="search" placeholder="Roedores...">
+                    </div>
+                    
+                    <h4>Sexo</h4>
+                    <div class="checkbox">
+                        <input type="radio" id="macho" name="sexo" value="macho">
+                        <label for="macho">Macho</label><br>
+                    </div>
+                    <div class="checkbox">
+                        <input type="radio" id="hembra" name="sexo" value="hembra">
+                        <label for="hembra">Hembra</label>
+                    </div>
+                
+                    <h4>Tamaño</h4>
+                    <div class="checkbox">
+                        <input type="checkbox" id="pequeno" name="tamaño" value="pequeño">
+                        <label for="pequeno">Pequeño</label><br>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" id="mediano" name="tamaño" value="mediano">
+                        <label for="mediano">Mediano</label><br>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" id="grande" name="tamaño" value="grande">
+                        <label for="grande">Grande</label><br>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" id="muy-grande" name="tamaño" value="muy Grande">
+                        <label for="muy-grande">Muy Grande</label><br>
+                    </div>
+                
+                    <h4>Edad</h4>
+                    <div class="checkbox">
+                        <input type="checkbox" id="cachorro" name="edad" value="cachorro">
+                        <label for="cachorro">Cachorro &#40 2 a 3 meses &#41</label><br>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" id="joven" name="edad" value="joven">
+                        <label for="joven">Joven &#40 3 a 6 meses &#41</label><br>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" id="adulto" name="edad" value="adulto">
+                        <label for="adulto">Adulto &#40 + 1 año &#41</label><br>
+                    </div>
+                    <br>
 
-        <div class="formulario_busqueda">
+                    <!--BOTONES-->
+                    <button type="submit"><a href="">Buscar</button></a>
+                </form>
+            </div>
 
-            <!--MENU DE BUSQUEDA VERTICAL CON LAS CARACTERISTICAS DE LAS MASCOTAS-->
-            <form class="busqueda_lateral">
+            <!--MASCOTAS DISPONIBLES PARA LA ADOPCION-->
 
-                <h4>Especie</h4>
-                <input type="search" placeholder="Roedores...">
-                <h4>Sexo</h4>
-                <div class="enlinea">
-                    <input type="radio" id="macho" name="sexo" value="macho">
-                    <label for="macho">Macho</label><br>
-                    <input type="radio" id="hembra" name="sexo" value="hembra">
-                    <label for="hembra">Hembra</label>
-                </div>   
-                <h4>Tamaño</h4>
-                <input type="checkbox" id="pequeno" name="tamaño" value="pequeño">
-                <label for="pequeno">Pequeño</label><br>
-
-                <input type="checkbox" id="mediano" name="tamaño" value="mediano">
-                <label for="mediano">Mediano</label><br>
-
-                <input type="checkbox" id="grande" name="tamaño" value="grande">
-                <label for="grande">Grande</label><br>
-
-                <input type="checkbox" id="muy-grande" name="tamaño" value="muy Grande">
-                <label for="muy-grande">Muy Grande</label><br>
-
-                <h4>Edad</h4>
-                <input type="checkbox" id="cachorro" name="edad" value="cachorro">
-                <label for="cachorro">Cachorro &#40 2 a 3 meses &#41</label><br>
-                <input type="checkbox" id="joven" name="edad" value="joven">
-                <label for="joven">Joven &#40 3 a 6 meses &#41</label><br>
-                <input type="checkbox" id="adulto" name="edad" value="adulto">
-                <label for="adulto">Adulto &#40 + 1 año &#41</label><br>
-                <br>
-
-                <!--BOTONES-->
-                <button type="submit"><a href="">Buscar</button></a>
-            </form>
-        </div>
-        <!--MASCOTAS DISPONIBLES PARA LA ADOPCION-->
-
-        <div class="resultado_mascotas">
-            <a href="../extranet/3_adoptar_o_cancelar.html"><img height="170" width="250" src="../assets/imagenes/pelusa.png" alt="pelusa"></a>
-            <p>Hola soy Pelusa, soy una gatita <br>muy cariñosa y amigable.</p>
-            <a href="../extranet/3_adoptar_o_cancelar.html"><img height="170" width="250" src="../assets/imagenes/zoe.png" alt="zoe"></a>
-            <p>Hola soy Zoe, soy una guanaca que le gusta mucho el pasto.</p>
-            <a href="../extranet/3_adoptar_o_cancelar.html"><img height="170" width="250" src="../assets/imagenes/toby.png" alt="toby"></a>
-            <p>Hola soy Toby, soy un cachorrito muy travieso.</p>
-            <a href="../extranet/3_adoptar_o_cancelar.html"><img height="170" width="250" src="../assets/imagenes/pipo.png" alt="pipo"></a>
-            <p>Hola soy Pipo, un hamster muy curioso.</p>
-        </div>
-
-        <!--REDES SOCIALES-->
-        <div class="redes_sociales_container">
-            <div class="redes_sociales">
-                <a href=""><img src="../assets/iconos/instagram.png" alt="instagram">universoPeludo</a>
-                <a href=""><img src="../assets/iconos/facebook.png" alt="facebook">refugioUniversoPeludo</a>
-                <a href=""><img src="../assets/iconos/gmail.png" alt="gmail">universoPeludo@gmail.com</a>
+            <div class="resultado_mascotas">
+                <div class="resultado">
+                    <a href="../extranet/3_adoptar_o_cancelar.html"><img height="170" width="250" src="../assets/imagenes/pelusa.png" alt="pelusa"></a>
+                    <p>Hola soy Pelusa, soy una gatita <br>muy cariñosa y amigable.</p>
+                </div>
+                <div class="resultado">
+                    <a href="../extranet/3_adoptar_o_cancelar.html"><img height="170" width="250" src="../assets/imagenes/zoe.png" alt="zoe"></a>
+                    <p>Hola soy Zoe, soy una guanaca que le gusta mucho el pasto.</p>
+                </div>
+                <div class="resultado">
+                    <a href="../extranet/3_adoptar_o_cancelar.html"><img height="170" width="250" src="../assets/imagenes/toby.png" alt="toby"></a>
+                    <p>Hola soy Toby, soy un cachorrito muy travieso.</p>
+                </div>
+                <div class="resultado">
+                    <a href="../extranet/3_adoptar_o_cancelar.html"><img height="170" width="250" src="../assets/imagenes/pipo.png" alt="pipo"></a>
+                    <p>Hola soy Pipo, un hamster muy curioso.</p>
+                </div>
             </div>
         </div>
    </body>
