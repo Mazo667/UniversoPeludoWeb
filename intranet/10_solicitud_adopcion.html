@@ -4,49 +4,71 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Formulario de Adopcion</title>
+        <link rel="stylesheet" href="../estilos/estilos_Intranet.css">
     </head>
-    <body>
-        <h3>ADMINISTRACION - SOLICITUD DE ADOPCION</h3>
+    <body class="fondo_Intranet">
+        <div class="ruta-navegacion">
+            <h3>ADMINISTRACION - SOLICITUD DE ADOPCION</h3>
+        </div>
         <!--MENU DE NAVEGACION-->
-        <menu>
-            <li><a href="1_consultas.html"> <img src="../assets/iconos/consultas.png" width="95"><br> CONSULTAS</a></li> 
-            <li><a href="3_usuarios.html">  <img src="../assets/iconos/usuario.png" width="70"><br> USUARIOS</a></li> 
-            <li> <a href="5_mod_elim_publicaciones.html"> <img src="../assets/iconos/publicacion.png" width="80"><br> PUBLICACIONES</a></li>
-            <li><a href="7_seguimientos.html"> <img src="../assets/iconos/pedidos.png" width="70"><br> SEGUIMIENTOS</a></li>
-            <li><a href="9_pedidos_de_adopcion.html"> <img src="../assets/iconos/pedidos.png" width="70"><br> PEDIDOS DE ADOPCION</a></li>
-            <li><a href="11_postulamiento_voluntario.html"> <img src="../assets/iconos/pedidos.png" width="70"><br> POSTULANTES</a></li>  
-        </menu>
-        <!--SOLICITUD DE ADOPCION YA RESPONDIDO EN ESPERA DE EVALUACION-->
-        <div>
-            <h3>SOLICITUD DE ADOPCION</h3>
-            <img src="../assets/imagenes/zoe.png" alt="zoe">
-            <strong>NOMBRE:</strong> Suarez, Micaela <br>
-            <strong>FECHA DE NACIMIENTO:</strong>19/05/1992 <br>
-            <strong>DNI:</strong>37.140.100 <br>
-            <strong>CORREO:</strong> mica@gmail.com <br>
-            <strong>DOMICLIO:</strong>La Pampa 350, Rawson <br>
-            <strong>CELULAR:</strong> (2804) - 002244 <br>
-                                        
-            <strong>EDAD:</strong> 2 años <br>
-            <strong>SEXO:</strong> Hembra <br>
-            <strong>ESPECIE:</strong> Guanaca <br>
-            <strong>COLOR:</strong> Marron Claro <br>
-            <strong>TAMAÑO:</strong> Muy Grande <br>
-            <strong>NECESIDADES ESPECIALES: </strong> Ninguno<br>
-
-            <div><!--CONTENEDOR CON LAS PREGUNTAS DEL FORMULARIO Y LAS RESPUESTAS DEL USUARIO-->
-                <strong>¿Tiene experiencia previa en el cuidado de mascotas? Si es asi, ¿Que tipo de mascotas <br> ha tenido</strong> <br>
-                <p>- Tengo experiencia con animales domesticos como gatos y perros. </p>
-                <strong>¿Dispone de un lugar adecuado para la mascota? Describir brevemente .</strong>
-                <p>- Si! Tengo un gran patio trasero, cerrado y con bastante vegetacion.</p>
-                <strong>¿Convive con otros animales en el mismo espacio?¿Cuales son?</strong>
-                <p>- Tengo un perro grande pero muy cariñoso, y tres gatos que viven dentro de la casa. Son todos muy amigables</p>
+        <div class="en_linea">
+            <div class="container-menu-navegacion">
+                <menu class="menu_navegacion_intranet">
+                    <div class="card-icono">
+                        <a href="1_consultas.html"> <img src="../assets/iconos/consultas.png" width="95"><br> CONSULTAS</a>
+                    </div>
+                    <div class="card-icono">
+                        <a href="3_usuarios.html">  <img src="../assets/iconos/usuario.png" width="70"><br> USUARIOS</a>
+                    </div>
+                    <div class="card-icono">
+                        <a href="5_mod_elim_publicaciones.html"> <img src="../assets/iconos/publicacion.png" width="80"><br> PUBLICACIONES</a>
+                    </div>
+                    <div class="card-icono">
+                        <a href="7_seguimientos.html"> <img src="../assets/iconos/pedidos.png" width="70"><br> SEGUIMIENTOS</a>
+                    </div>
+                    <div class="card-icono">
+                        <a href="9_pedidos_de_adopcion.html"> <img src="../assets/iconos/pedidos.png" width="70"><br> PEDIDOS DE ADOPCION</a>
+                    </div>
+                    <div class="card-icono">
+                        <a href="11_postulamiento_voluntario.html"> <img src="../assets/iconos/pedidos.png" width="70"><br> POSTULANTES</a>
+                    </div>
+               </menu>
             </div>
-            <!--BOTONES-->
-            <form>
-                <button type="submit"><a href="9_pedidos_de_adopcion.html">ACEPTAR<img src="../assets/iconos/aceptar.png" width="20"></button></a>
-                <button type="submit"><a href="9_pedidos_de_adopcion.html">RECHAZAR<img src="../assets/iconos/cancelar.png" width="20"></button></a>
-            </form>
+            <!--SOLICITUD DE ADOPCION YA RESPONDIDO EN ESPERA DE EVALUACION-->
+            <div class="container-contenido">
+                <div>
+                    <h3>SOLICITUD DE ADOPCION</h3>
+                    <img src="../assets/imagenes/zoe.png" alt="zoe">
+                    <strong>NOMBRE:</strong> Suarez, Micaela <br>
+                    <strong>FECHA DE NACIMIENTO:</strong>19/05/1992 <br>
+                    <strong>DNI:</strong>37.140.100 <br>
+                    <strong>CORREO:</strong> mica@gmail.com <br>
+                    <strong>DOMICLIO:</strong>La Pampa 350, Rawson <br>
+                    <strong>CELULAR:</strong> (2804) - 002244 <br>
+                                                
+                    <strong>EDAD:</strong> 2 años <br>
+                    <strong>SEXO:</strong> Hembra <br>
+                    <strong>ESPECIE:</strong> Guanaca <br>
+                    <strong>COLOR:</strong> Marron Claro <br>
+                    <strong>TAMAÑO:</strong> Muy Grande <br>
+                    <strong>NECESIDADES ESPECIALES: </strong> Ninguno<br>
+
+                    <div><!--CONTENEDOR CON LAS PREGUNTAS DEL FORMULARIO Y LAS RESPUESTAS DEL USUARIO-->
+                        <strong>¿Tiene experiencia previa en el cuidado de mascotas? Si es asi, ¿Que tipo de mascotas <br> ha tenido</strong> <br>
+                        <p>- Tengo experiencia con animales domesticos como gatos y perros. </p>
+                        <strong>¿Dispone de un lugar adecuado para la mascota? Describir brevemente .</strong>
+                        <p>- Si! Tengo un gran patio trasero, cerrado y con bastante vegetacion.</p>
+                        <strong>¿Convive con otros animales en el mismo espacio?¿Cuales son?</strong>
+                        <p>- Tengo un perro grande pero muy cariñoso, y tres gatos que viven dentro de la casa. Son todos muy amigables</p>
+                    </div>
+                    <!--BOTONES-->
+                    <form>
+                        <button type="submit"><a href="9_pedidos_de_adopcion.html">ACEPTAR<img src="../assets/iconos/aceptar.png" width="20"></button></a>
+                        <button type="submit"><a href="9_pedidos_de_adopcion.html">RECHAZAR<img src="../assets/iconos/cancelar.png" width="20"></button></a>
+                    </form>
+                </div>
+            </div>
+            
         </div>
     </body>
 </html>

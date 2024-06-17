@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Viaoda+Libre&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Viaoda+Libre&family=Voltaire&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Viaoda+Libre&family=Voltaire&family=Work+Sans:ital,wght@0,100..900; 1,100..900&display=intercambio');
+
+body.fondo_Intranet { /*FONDO DE LAS PAGINAS DE INTRANET*/
+    background-image: url("../assets/imagenes/fondo_intranet.png");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.ruta-navegacion { /*RUTA DE NAVEGACION*/
+    background-color: #262626;
+    overflow: hidden;
+    width: 100vw;
+    display: flex;
+    top: 0;
+    left: 0;
+    z-index: 1000; 
+    margin-bottom: 5%;
+    position: fixed; /* Mantener el menú fijo al desplazarse */
+
+    h3 {
+        color: white;
+        text-align: start;
+        margin-left: 2%;
+    }
+}
+
+.en_linea {
+    display: flex;
+    padding: 2%;
+    justify-content: space-between;
+}
+
+.container-menu-navegacion { /*FONDO DE MENU DE NAVEGACION VERTICAL*/
+    background-color: #333;
+    color: white;
+    height: 100vw;
+    width: 13%; /* Ancho del menú */
+    padding: 1%;
+    box-sizing: border-box;
+    position: fixed; /* Mantener el menú fijo al desplazarse */
+    left: 0%;
+    right: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+menu.menu_navegacion_intranet { /*ICONOS E INDICES DE MENU DE NAVEGACION VERTICAL*/
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.card-icono {
+    background-color: var(--gris_transulucido);
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    margin: 7%;
+    width: 100%;
+    height: 120%;
+}
+
+.container-contenido { /*TODO EL CONTENIDO DE LA PAGINA*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* Alinear elementos al inicio */
+    margin-left: 15%; /* Ajustar margen para alinear con el menú */
+    margin-top: 3%;
+    flex-direction: column;
+}
+
+.consultas {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #3333336f;
+    margin: 1% 0;
+    border-radius: 20px;
+    padding: 1%;
+    width: 120%;
+
+    h4 {
+        font-family: 'Inter';
+        font-size: 200%;
+        color: white;
+    }
+}
+
+.usuario-consulta {
+    text-align: start;
+    color: white;
+    font-family: 'Inter';
+    font-size: 1em; /* Ajustar tamaño de fuente */
+    width: 100%;
+}
+
+button[type="submit"], button[type="reset"], button[type="button"],button[type="menu"]{
+    background-color: rgb(61, 58, 63);
+    color: white;
+    border-radius: 30px;
+    margin-top: 2%;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    flex: 1;
+    max-width: 150px; /* Ancho máximo del botón */
+}

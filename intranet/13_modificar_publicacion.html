@@ -4,48 +4,70 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Modificar Publicacion</title>
+        <link rel="stylesheet" href="../estilos/estilos_Intranet.css">
     </head>
-    <body>
-        <h3>ADMINISTRACION - MODIFICAR PUBLICACION</h3>
+    <body class="fondo_Intranet">
+        <div class="ruta-navegacion">
+            <h3>ADMINISTRACION - MODIFICAR PUBLICACION</h3>
+        </div>
         <!--MENU DE NAVEGACION-->
-        <menu>
-            <li><a href="1_consultas.html"> <img src="../assets/iconos/consultas.png" width="95"><br> CONSULTAS</a></li> 
-            <li><a href="3_usuarios.html">  <img src="../assets/iconos/usuario.png" width="70"><br> USUARIOS</a></li> 
-            <li> <a href="5_mod_elim_publicaciones.html"> <img src="../assets/iconos/publicacion.png" width="80"><br> PUBLICACIONES</a></li>
-            <li><a href="7_seguimientos.html"> <img src="../assets/iconos/pedidos.png" width="70"><br> SEGUIMIENTOS</a></li>
-            <li><a href="9_pedidos_de_adopcion.html"> <img src="../assets/iconos/pedidos.png" width="70"><br> PEDIDOS DE ADOPCION</a></li>
-            <li><a href="11_postulamiento_voluntario.html"> <img src="../assets/iconos/pedidos.png" width="70"><br> POSTULANTES</a></li>  
-        </menu>
-        <div>
-            <a href=""><img src="../assets/imagenes/zoe.png" width="300"><br></a>
-            <p><strong>Agregar Foto</strong></p>
-            <form>
-                <label for="nombre">Nombre</label><br>
-                <input type="text" name="nombre" id="nombre" placeholder="NOMBRE" value="Zoe"> <br>
-                    
-                <label for="especie">Especie</label><br>
-                <input type="text" name="especie" id="especie" placeholder="ESPECIE" value="Guanaco"> <br>
-                    
-                <label for="sexo">Sexo</label><br>
-                <input type="text" name="sexo" id="sexo" placeholder="SEXO" value="Hembra"> <br>
-                    
-                <label>Edad</label><br>
-                <input type="date" name="edad" id="edad" placeholder="EDAD" value="2 Años"> <br>
-                    
-                <label for="tamaño">Tamaño</label><br>
-                <input type="text" name="tamaño" id="tamaño" placeholder="TAMAÑO" value="Muy Grande"> <br><br>
-                    
-                <label for="descripcion">Descripcion</label><br>
-                <textarea name="descripcion" id="descripcion" cols="30" rows="10" placeholder="DESCRIPCION...">Zoe es una pequeña guanaca de 2 años, de pelaje marron claro y ojos grandes.
-                Historia: Zoe nacio un campo abierto en la patagonia, donde corria con su madre y otros guanacos. Un dia su madre murio por
-                cazadores de la zona y ella se quedo sola. Deambulo por el campo varios dias, buscando su madre y sin saber que hacer.
-                Estaba asustada y hambrienta. Un dia fue encontrada por una familia en la ruta, tras darle un poco de pan se apidiaron de ella y se la llevaron con ellos.
-                Y nos la trajieron a nosotros para buscarle un hogar y darle una familia a quien se la arrebataron.</textarea><br>
+        <div class="en_linea">
+            <div class="container-menu-navegacion">
+                <menu class="menu_navegacion_intranet">
+                    <div class="card-icono">
+                        <a href="1_consultas.html"> <img src="../assets/iconos/consultas.png" width="95"><br> CONSULTAS</a>
+                    </div>
+                    <div class="card-icono">
+                        <a href="3_usuarios.html">  <img src="../assets/iconos/usuario.png" width="70"><br> USUARIOS</a>
+                    </div>
+                    <div class="card-icono">
+                        <a href="5_mod_elim_publicaciones.html"> <img src="../assets/iconos/publicacion.png" width="80"><br> PUBLICACIONES</a>
+                    </div>
+                    <div class="card-icono">
+                        <a href="7_seguimientos.html"> <img src="../assets/iconos/pedidos.png" width="70"><br> SEGUIMIENTOS</a>
+                    </div>
+                    <div class="card-icono">
+                        <a href="9_pedidos_de_adopcion.html"> <img src="../assets/iconos/pedidos.png" width="70"><br> PEDIDOS DE ADOPCION</a>
+                    </div>
+                    <div class="card-icono">
+                        <a href="11_postulamiento_voluntario.html"> <img src="../assets/iconos/pedidos.png" width="70"><br> POSTULANTES</a>
+                    </div>
+                </menu>
+            </div>
+
+            <div class="container-contenido">
+                <div>
+                    <a href=""><img src="../assets/imagenes/zoe.png" width="300"><br></a>
+                    <p><strong>Agregar Foto</strong></p>
+                    <form>
+                        <label for="nombre">Nombre</label><br>
+                        <input type="text" name="nombre" id="nombre" placeholder="NOMBRE" value="Zoe"> <br>
                             
-                <!--BOTONES-->
-                <button type="submit"><a href="">GUARDAR<img src="../assets/iconos/aceptar.png" width="20"></button></a>
-                <button type="button"><a href="5_mod_elim_publicaciones.html">CANCELAR</a> <img src="../assets/iconos/cancelar.png" width="20"></button>
-            </form>
+                        <label for="especie">Especie</label><br>
+                        <input type="text" name="especie" id="especie" placeholder="ESPECIE" value="Guanaco"> <br>
+                            
+                        <label for="sexo">Sexo</label><br>
+                        <input type="text" name="sexo" id="sexo" placeholder="SEXO" value="Hembra"> <br>
+                            
+                        <label>Edad</label><br>
+                        <input type="date" name="edad" id="edad" placeholder="EDAD" value="2 Años"> <br>
+                            
+                        <label for="tamaño">Tamaño</label><br>
+                        <input type="text" name="tamaño" id="tamaño" placeholder="TAMAÑO" value="Muy Grande"> <br><br>
+                            
+                        <label for="descripcion">Descripcion</label><br>
+                        <textarea name="descripcion" id="descripcion" cols="30" rows="10" placeholder="DESCRIPCION...">Zoe es una pequeña guanaca de 2 años, de pelaje marron claro y ojos grandes.
+                        Historia: Zoe nacio un campo abierto en la patagonia, donde corria con su madre y otros guanacos. Un dia su madre murio por
+                        cazadores de la zona y ella se quedo sola. Deambulo por el campo varios dias, buscando su madre y sin saber que hacer.
+                        Estaba asustada y hambrienta. Un dia fue encontrada por una familia en la ruta, tras darle un poco de pan se apidiaron de ella y se la llevaron con ellos.
+                        Y nos la trajieron a nosotros para buscarle un hogar y darle una familia a quien se la arrebataron.</textarea><br>
+                                    
+                        <!--BOTONES-->
+                        <button type="submit"><a href="">GUARDAR<img src="../assets/iconos/aceptar.png" width="20"></button></a>
+                        <button type="button"><a href="5_mod_elim_publicaciones.html">CANCELAR</a> <img src="../assets/iconos/cancelar.png" width="20"></button>
+                    </form>
+                </div>
+            </div>
         </div>
     </body>
 </html>
