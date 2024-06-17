@@ -32,7 +32,6 @@ body.fondo_Intranet { /*FONDO DE LAS PAGINAS DE INTRANET*/
 .en_linea {
     display: flex;
     padding: 2%;
-    justify-content: space-between;
 }
 
 .container-menu-navegacion { /*FONDO DE MENU DE NAVEGACION VERTICAL*/
@@ -44,18 +43,18 @@ body.fondo_Intranet { /*FONDO DE LAS PAGINAS DE INTRANET*/
     box-sizing: border-box;
     position: fixed; /* Mantener el menú fijo al desplazarse */
     left: 0%;
-    right: 5%;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 menu.menu_navegacion_intranet { /*ICONOS E INDICES DE MENU DE NAVEGACION VERTICAL*/
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-
+    align-items: center;
+    margin-top: 20%;
+    margin-right: 10%;
+    margin-left: -10%;
 }
 
 .card-icono {
@@ -64,9 +63,15 @@ menu.menu_navegacion_intranet { /*ICONOS E INDICES DE MENU DE NAVEGACION VERTICA
     background-repeat: no-repeat;
     border-radius: 20px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
-    margin: 7%;
-    width: 100%;
-    height: 120%;
+    margin: 3%;
+    margin-top: 10%;
+    width: 110%;
+    
+    img {
+        width: 35%;
+        height: auto;
+        margin: 3%;
+    }
 }
 
 .container-contenido { /*TODO EL CONTENIDO DE LA PAGINA*/
