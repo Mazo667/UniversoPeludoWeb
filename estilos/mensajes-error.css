@@ -1,0 +1,30 @@
+.campo-formulario {
+    position: relative; /* Asegura que los mensajes de error sean posicionados relativamente a este contenedor */
+    margin-bottom: 10px;
+}
+
+.mensaje-error {
+    position: absolute; /* Posición absoluta para el mensaje de error */
+    background-color: aliceblue;
+    border-radius: 20px;
+    width: 200px; /* Ancho del mensaje de error */
+    padding: 10px;
+    display: none; /* Ocultar inicialmente */
+    color: rgb(0, 0, 0);
+    font-size: 0.9em;
+    text-align: center;
+    z-index: 1; /* Asegura que el mensaje esté sobre el contenido */
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: calc(100% + 5px); /* Posiciona el mensaje de error justo arriba del campo de formulario */
+    }
+
+.mensaje-error::before {
+    content: '';
+    position: absolute;
+    top: -20px; /* Posiciona la flecha arriba del mensaje de error */
+    left: calc(50% - 10px); /* Centra la flecha horizontalmente */
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent aliceblue transparent; /* Ajusta el color para que coincida con el fondo */
+}

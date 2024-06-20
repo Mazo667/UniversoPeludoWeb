@@ -8,7 +8,44 @@
         <script src="../scripting/validaciones.js"></script>
         <script>
             function validarFormularioRegistro(){
-                if (esDNIValido(document.getElementById('dni').value)){
+                var mensajeError = 'Se encontraron los siguientes errores: \n\n\n';
+                var error = false;
+                if (!esNombreValido(document.getElementById('nombre').value)) {
+                    error = true;
+                    mensajeError += '* El nombre no es valido.\n';
+                }
+                if (!esApellidoValido(document.getElementById('apellido').value)){
+                    error = true;
+                    mensajeError += '* El apellido no es valido.\n';
+                }
+                if (!esNacimientoValido(document.getElementById('fechaNacimiento').value)){
+                    error = true;
+                    mensajeError += '* No es valido.\n';
+                }
+                if (!esDNIValido(document.getElementById('dni').value)){
+                    error = true;
+                    mensajeError += '* El DNI no es valido.\n';
+                }
+                if (!esDomicilioValido(document.getElementById('domicilio').value)){
+                    error = true;
+                    mensajeError += '* El domicilio no es valido.\n';
+                }
+                if (!esLocalidadValido(document.getElementById('localidad').value)){
+                    error = true;
+                    mensajeError += '* La localidad no es valida.\n';
+                }
+                if (!esNroCelularValido(document.getElementById('numeroCelular').value)){
+                    error = true;
+                    mensajeError += '* El celular no es valido.\n';
+                }
+                if (!esEmailValido(document.getElementById('email').value)){
+                    error = true;
+                    mensajeError += '* El email no es valido.\n';
+                }
+                if (error) {
+                    alert(mensajeError);
+                    return false;
+                } else {
                     return true;
                 }
             }
@@ -31,7 +68,7 @@
 
             <h1>REGISTRARSE</h1>
 
-            <form>
+            <form onsubmit="javaScript:if (validarFormularioRegistro()){ return true; } else { return false;}" action="8_contraseña_registrarse.html">
                 <label for="nombre">Nombre</label><br>
                 <input aria-label="Nombre" type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required><br>
 
@@ -66,10 +103,6 @@
                 <!--ENLACE A OTRA PAGINA-->
                 <img src="../assets/iconos/patita.png" alt="patita">
                 <a href="7_iniciar-sesion.html">¿Ya tienes cuenta? Inicia Sesion</a><br><br>
-
-                <!-- Mensaje de error -->
-                <p id="mensajeError"></p>
-
             </form>
         </div>
     </body>

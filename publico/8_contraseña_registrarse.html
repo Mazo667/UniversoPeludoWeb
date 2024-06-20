@@ -1,45 +1,60 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Registrarse</title>
-        <link rel="stylesheet" href="../estilos/estilos.css">
-        <!--<script src="../scripting/validaciones.js"></script>-->
-    </head>
-    <body class="gradiente">
-        <!--MENU DE NAVEGACION-->
-        <nav class="menu_navegacion">
-            <a href="1_inicio.html">INICIO </a>
-            <a href="7_iniciar-sesion.html">MI CUENTA </a>
-            <a href="../extranet/5_formulario_postulante.html">SE PARTE DE NOSOTROS! </a>
-            <a href="4_quienes_somos.html">¿QUIENES SOMOS? </a>
-            <a href="2_novedades.html">NOVEDADES </a>
-            <a href="../extranet/2_enviar_consulta.html">HACE TU CONSULTA </a>
-            <a href="3_preguntas_frecuentes.html">PREGUNTAS FRECUENTES</a>
-        </nav>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Contraseña</title>
+    <link rel="stylesheet" href="../estilos/estilos.css">
+    <link rel="stylesheet" href="../estilos/mensajes-error.css">
+    <script src="../scripting/validaciones.js"></script>
+    <script>
+        function validarFormularioRegistro() {
+            var password = document.getElementById('password').value;
+            var confirmarPassword = document.getElementById('confirmarPassword').value;
+            if (esPasswordValido(password, confirmarPassword)) {
+                return true;
+            } else {
+                alert('Las contraseñas no coinciden');
+                return false;
+            }
+        }
+    </script>
+</head>
+<body class="gradiente">
+    <!-- MENU DE NAVEGACION -->
+    <nav class="menu_navegacion">
+        <a href="1_inicio.html">INICIO</a>
+        <a href="7_iniciar-sesion.html">MI CUENTA</a>
+        <a href="../extranet/5_formulario_postulante.html">SE PARTE DE NOSOTROS!</a>
+        <a href="4_quienes_somos.html">¿QUIENES SOMOS?</a>
+        <a href="2_novedades.html">NOVEDADES</a>
+        <a href="../extranet/2_enviar_consulta.html">HACE TU CONSULTA</a>
+        <a href="3_preguntas_frecuentes.html">PREGUNTAS FRECUENTES</a>
+    </nav>
 
-        <!--CONTENEDOR DE REGISTRO DE CONTRASEÑA-->
-        <div class="container_translucido">
+    <!-- CONTENEDOR DE REGISTRO DE CONTRASEÑA -->
+    <div class="container_translucido">
+        <h1>REGISTRAR CONTRASEÑA</h1>
 
-            <h1>REGISTRARSE</h1>
+        <form id="formulario" onsubmit="return validarFormularioRegistro()">
+            
+            <label for="password">Contraseña</label><br>
+            <input aria-label="Contraseña" type="password" id="password" name="password" placeholder="Ingrese su contraseña" required><br>
+            <span class="mensaje-error"></span> <!-- Mensaje de error para contraseña -->
+            
+            <label for="confirmarPassword">Confirmar Contraseña</label><br>
+            <input aria-label="Confirmar Contraseña" type="password" id="confirmarPassword" name="confirmarPassword" placeholder="Confirme su contraseña" required><br>
+            <span class="mensaje-error"></span> <!-- Mensaje de error para confirmar contraseña -->
+            
+            <br>
 
-            <form id="registrar_contraseña">
-                <label for="password">Contraseña</label><br>
-                <input aria-label="Contraseña" type="password" id="password" name="password" placeholder="Ingrese su contraseña" required><br>
-                <label for="confirmarPassword">Confirmar Contraseña</label><br>
-                <input aria-label="Confirmar Contraseña" type="password" id="confirmarPassword" name="confirmarPassword" placeholder="Confirme su contraseña" required><br>
-                <br>
+            <img src="../assets/iconos/michi.png" alt="gatito_registro" width="200"><br>
+            <!-- BOTONES Y ENLACE A OTRA PAGINA -->
+            <button type="submit">REGISTRARSE</button>
+            <button type="button" onclick="window.location.href='6_registrarse.html'">CANCELAR</button>
 
-                <img src="../assets/iconos/michi.png" alt="gatito_registro" width="200"><br>
-                <!--BOTONES Y ENLACE A OTRA PAGINA-->
-                <button type="submit">REGISTRARSE</button>
-                <button type="button" onclick="window.location.href='6_registrarse.html'">CANCELAR</button>
-
-                <!-- Mensaje de error -->
-                <p id="mensajeErrorContraseña"></p>
-            </form>
-
-        </div>
-    </body>
+        </form>
+    </div>
+</body>
 </html>
+

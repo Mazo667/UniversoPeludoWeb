@@ -66,12 +66,12 @@ menu.menu_navegacion_intranet { /*ICONOS E INDICES DE MENU DE NAVEGACION VERTICA
     margin: 3%;
     margin-top: 10%;
     width: 110%;
-    
-    img {
-        width: 35%;
-        height: auto;
-        margin: 3%;
-    }
+}
+
+.card-icono img {
+    width: 35%;
+    height: 75px;
+    margin: 3%;
 }
 
 .container-contenido { /*TODO EL CONTENIDO DE LA PAGINA*/
