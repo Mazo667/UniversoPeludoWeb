@@ -65,12 +65,11 @@ menu.menu_navegacion_intranet { /*ICONOS E INDICES DE MENU DE NAVEGACION VERTICA
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
     margin: 3%;
     margin-top: 10%;
-    width: 110%;
+    width: 100%;
 }
 
 .card-icono img {
-    width: 35%;
-    height: 75px;
+    height: 20%;
     margin: 3%;
 }
 
