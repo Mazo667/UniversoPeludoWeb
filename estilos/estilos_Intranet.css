@@ -74,38 +74,57 @@ menu.menu_navegacion_intranet { /*ICONOS E INDICES DE MENU DE NAVEGACION VERTICA
     margin: 3%;
 }
 
-.container-contenido { /*TODO EL CONTENIDO DE LA PAGINA*/
+.container-consultas { /*TODO EL CONTENIDO DE LA PAGINA*/
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start; /* Alinear elementos al inicio */
+    align-items: start;
+    justify-content: space-between; /* Alinear elementos al inicio */
     margin-left: 15%; /* Ajustar margen para alinear con el menú */
     margin-top: 3%;
     flex-direction: column;
 }
 
-.consultas {
+.consulta {
     display: flex;
+    justify-content: space-between; /* Alinear elementos al final (derecha) */
     align-items: center;
-    justify-content: space-between;
     background-color: #3333336f;
     margin: 1% 0;
     border-radius: 20px;
     padding: 1%;
-    width: 120%;
+    width: 100%;
 
+    a {
+        margin-right: 2%; /* Asegura espacio a la derecha del enlace */
+        margin-left: 2%;
+    }
+    
     h4 {
         font-family: 'Inter';
-        font-size: 200%;
+        font-size: 2em;
         color: white;
     }
 }
 
-.usuario-consulta {
-    text-align: start;
-    color: white;
-    font-family: 'Inter';
-    font-size: 1em; /* Ajustar tamaño de fuente */
+.container-consultas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 100%;
+    
+    h4 {
+        font-size: 2em;
+        margin-bottom: 2%;
+        margin-top: 2%;
+        margin-left: 2%;
+    }
+
+    p {
+        font-size: 1.1em;
+        margin-bottom: 2%;
+        margin-left: 2%;
+        color: white;
+    }
 }
 
 button[type="submit"], button[type="reset"], button[type="button"],button[type="menu"]{
