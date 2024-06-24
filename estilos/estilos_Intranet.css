@@ -110,6 +110,7 @@ menu.menu_navegacion_intranet { /*ICONOS E INDICES DE MENU DE NAVEGACION VERTICA
     flex-direction: column;
     justify-content: center;
     width: 100%;
+    height: 80%;
     
     h4 {
         font-size: 2em;
