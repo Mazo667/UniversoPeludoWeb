@@ -79,6 +79,7 @@ body.fondo_Intranet { /*FONDO DE LAS PAGINAS DE INTRANET*/
     margin-top: 4%;
     width: 60%; /* Ajustado para ser más flexible dentro del contenedor */
     height: auto; /* Cambiado para adaptarse al contenido */
+    text-align: center;
 }
 
 .card-icono img {
@@ -180,6 +181,49 @@ body.fondo_Intranet { /*FONDO DE LAS PAGINAS DE INTRANET*/
         color: var(--primary-color);
     }
 }
+
+.contenido-principal{
+    margin-left: 25%;
+    margin-top: 2%;
+}
+
+.card-body.bg-custom {
+    border-radius: 10px; /* Ajusta este valor según el radio de esquina deseado */
+    border: none; /* Elimina el borde */
+}
+
+.card-body{
+    
+    a {
+        text-decoration: none;
+        text-align: center;
+        font-family: 'Voltaire';
+        color: black;
+    }
+}
+
+.nav.flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; /* Centra los elementos verticalmente */
+    align-items: center; /* Centra los elementos horizontalmente */
+    height: 100%; /* Ocupa todo el alto disponible */
+}
+
+.nav.flex-column > li {
+    width: 100%; /* Asegura que cada <li> ocupe todo el ancho del <ul> */
+    display: flex; /* Habilita Flexbox para los elementos <li> */
+    justify-content: center; /* Centra los elementos internos de <li> horizontalmente */
+}
+
+.bg-custom {
+    background-color: var(--secondary-color);
+}
+
+.accordion-item {
+    background-color: transparent;
+}
+
 
 button[type="submit"], button[type="reset"], button[type="button"],button[type="menu"]{
     background-color: rgb(61, 58, 63);
