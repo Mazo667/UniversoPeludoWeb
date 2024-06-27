@@ -188,6 +188,98 @@ body.fondo_Intranet { /*FONDO DE LAS PAGINAS DE INTRANET*/
     margin-top: 2%;
 }
 
+.fila {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 8%;
+    width: 100%;
+}
+
+.columna {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    height: 100%;
+}
+/* */
+/* accordion-1 */
+#accordion-1{
+    position: relative;
+  }
+  
+  #accordion-1 .head{
+    background-color: var(--gris-translucido);
+    color: var(--primary-color);
+    border-radius: 20px;
+    width: 70vw;
+    margin-left: 20vw;
+    padding: 1em 1.4em;
+    cursor: pointer;
+    transition: 0.2s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  #accordion-1 .arrow{
+    color: #FFFFFF;
+    font-size: 1.6em;
+    transition: 0.25s ease;
+    opacity: 0.3;
+    transform: rotate(-90deg);
+  }
+  
+  #accordion-1 .head:hover .arrow{
+    opacity: 1;
+  }
+  
+  #accordion-1 .head:hover, #accordion-1 .active{
+    background-color: #3e3e3f;
+  }
+  
+  #accordion-1 .arrow-animate{
+    transform: rotate(-180deg);
+    opacity: 1;
+  }
+  
+  #accordion-1 .content{
+    background-color: #3e3e3f;
+    border-radius: 20px;
+    display: none;
+    margin-left: 20vh;
+    padding: 1em;
+    color: var(--primary-color);
+  }
+/* FIN ACCORDION */
+
+.buscador-usuarios {
+    background-color: var(--gris-translucido);
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    padding: 1em 1.4em;
+    width: 70vw;
+    margin-left: 20vw;
+
+    input {
+        margin-left: 2%;
+        border: none;
+        background: none;
+        text-decoration: none;
+        box-shadow: none;
+        color: var(--primary-color);
+        width: 100%;
+        font-size: 1.2em;
+    }
+
+    input:active, input:focus {
+        outline: none;
+    }
+}
+
 .nav-bar {
     position: fixed;
     top: 0;
