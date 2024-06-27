@@ -128,12 +128,9 @@ button[type="submit"], button[type="reset"], button[type="button"],button[type="
     font-weight: bold;
     justify-content: center;
     align-items: center;
-    padding: 10px 20px;
+    padding: 3% 1%;
     flex: 1;
-    max-width: 150px; /* Ancho máximo del botón */
 }
-
-
 
 /* Formularios */
 form {
@@ -297,7 +294,17 @@ input[type="text"], input[type="email"], input[type="password"], input[type="num
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    
+
+    .botones {
+        margin-left: 50%;
+        display: inline;
+    }
+
+    .logo-usuario {
+        float: right;
+        margin-right: -40%;
+        margin-top: -160%;
+    }
 }
 
 .img_usuario_container {

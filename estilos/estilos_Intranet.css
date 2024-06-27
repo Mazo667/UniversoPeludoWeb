@@ -113,9 +113,16 @@ body.fondo_Intranet { /*FONDO DE LAS PAGINAS DE INTRANET*/
 
 }
 
+.contenedor-nueva-publicacion{
+    background-color: var(--gris-translucido);
+    padding: 2%;
+    border-radius: 10px;
+    display: grid;
+}
+
 .container-tranlucido{
     background-color: var(--gris-translucido);
-    padding: 1%;
+    padding: 2%;
     max-width: 50%;
     border-radius: 10px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
@@ -183,11 +190,6 @@ body.fondo_Intranet { /*FONDO DE LAS PAGINAS DE INTRANET*/
     }
 }
 
-.contenido-principal{
-    margin-left: 25%;
-    margin-top: 2%;
-}
-
 .fila {
     display: flex;
     justify-content: space-evenly;
@@ -213,7 +215,6 @@ body.fondo_Intranet { /*FONDO DE LAS PAGINAS DE INTRANET*/
     background-color: var(--gris-translucido);
     color: var(--primary-color);
     border-radius: 20px;
-    width: 70vw;
     margin-left: 20vw;
     padding: 1em 1.4em;
     cursor: pointer;

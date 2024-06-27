@@ -8,55 +8,101 @@
         <link rel="stylesheet" href="../estilos/estilos_Intranet.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="canonical" href="https://getbootstrap.com/docs/5.0/components/accordion/">
+        <!-- Bootstrap core CSS -->
+        <link href="/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link href="/docs/5.0/assets/css/docs.css" rel="stylesheet">
     </head>
+    
     <body class="fondo_Intranet">
+      <div class="fila">
+        <div class="columna">
+            <nav class="nav-bar">
+                <ul>
+                  <li>
+                    <a href="1_consultas.html" class="nav-item">
+                        <i class="fa-solid fa-envelope" style="color: black; font-size: 2.6em;"></i>
+                        <p>CONSULTAS</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="3_usuarios.html" class="nav-item">
+                      <i class="fa-solid fa-user" style="color: black; font-size: 2.6em;"></i>
+                      <p>USUARIOS</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="5_mod_elim_publicaciones.html" class="nav-item">
+                        <i class="fa-solid fa-user" style="color: black; font-size: 2.6em;"></i>
+                        <p>PUBLICACIONES</p>
+                      </a>
+                  </li>
+                  <li>
+                    <a href="7_seguimientos.html" class="nav-item">
+                        <i class="fa-solid fa-user" style="color: black; font-size: 2.6em;"></i>
+                        <p>SEGUIMIENTOS</p>
+                    </a>
+                  </li>
+                    <li>
+                        <a href="9_pedidos_de_adopcion.html" class="nav-item">
+                            <i class="fa-solid fa-user" style="color: black; font-size: 2.6em;"></i>
+                            <p>PEDIDOS DE ADOPCION</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="11_postulamiento_voluntario.html" class="nav-item">
+                            <i class="fa-solid fa-user" style="color: black; font-size: 2.6em;"></i>
+                            <p>POSTULANTES</p>
+                        </a>
+                    </li>
+                </ul>
+              </nav>
+        </div>
         <div class="ruta-navegacion">
             <h3>ADMINISTRACION - USUARIOS</h3>
         </div>
-
-        <div class="fila">
-            <div class="columna">
-                <nav class="nav-bar">
-                    <ul>
-                      <li>
-                        <a href="1_consultas.html" class="nav-item">
-                            <i class="fa-solid fa-envelope" style="color: black; font-size: 2.6em;"></i>
-                            <p>CONSULTAS</p>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="3_usuarios.html" class="nav-item">
-                          <i class="fa-solid fa-user" style="color: black; font-size: 2.6em;"></i>
-                          <p>USUARIOS</p>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="5_mod_elim_publicaciones.html" class="nav-item">
-                            <i class="fa-solid fa-user" style="color: black; font-size: 2.6em;"></i>
-                            <p>PUBLICACIONES</p>
-                          </a>
-                      </li>
-                      <li>
-                        <a href="7_seguimientos.html" class="nav-item">
-                            <i class="fa-solid fa-user" style="color: black; font-size: 2.6em;"></i>
-                            <p>SEGUIMIENTOS</p>
-                        </a>
-                      </li>
-                        <li>
-                            <a href="9_pedidos_de_adopcion.html" class="nav-item">
-                                <i class="fa-solid fa-user" style="color: black; font-size: 2.6em;"></i>
-                                <p>PEDIDOS DE ADOPCION</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="11_postulamiento_voluntario.html" class="nav-item">
-                                <i class="fa-solid fa-user" style="color: black; font-size: 2.6em;"></i>
-                                <p>POSTULANTES</p>
-                            </a>
-                        </li>
-                    </ul>
-                  </nav>
+        <div class="columna">
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Accordion Item #1
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
             </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Accordion Item #2
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Accordion Item #3
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!--
             <div class="columna">
 
                 <div class="buscador-usuarios">
@@ -71,7 +117,7 @@
                         <i class="fa-solid fa-chevron-down icono-acordeon"></i>
                     </div>
                     <div class="informacion-usuario" style="display: none;">
-                        <!-- Agrega aquí la información adicional del usuario -->
+                        
                         <p>Detalles del usuario...</p>
                     </div>
                 </div>
@@ -84,9 +130,8 @@
                     <div class="content">
                       <p>An accordion is used to show and hide content. It can be usually found in Q & A section.</p>
                     </div>
-                  </div>
-
+                </div>
         </div>
-        <script src="../scripting/desplegables.js"></script>
+        <script src="../scripting/desplegables.js"></script>  -->
     </body>
 </html>
