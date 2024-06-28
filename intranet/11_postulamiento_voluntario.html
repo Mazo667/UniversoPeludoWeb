@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Solicitudes de postulamientos a voluntario</title>
-        <link rel="stylesheet" href="../estilos/estilos_Intranet.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    </head>
-    <body class="fondo_Intranet">
-        <div class="ruta-navegacion">
-            <h3>ADMINISTRACION - SOLICITUD POSTULANTES </h3>
-        </div>
-          <!--MENU DE NAVEGACION-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitudes de postulamientos a voluntario</title>
+    <link rel="stylesheet" href="../estilos/estilos_Intranet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body class="fondo_Intranet">
+    <div class="ruta-navegacion">
+        <h3>ADMINISTRACION - SOLICITUD POSTULANTES </h3>
+    </div>
+    <!--MENU DE NAVEGACION-->
     <div class="fila">
         <div class="columna">
             <nav class="nav-bar">
@@ -42,55 +44,62 @@
                         <p>PEDIDOS DE ADOPCION</p>
                     </a>
 
-                    <a href="11_postulamiento_voluntario.html" class="nav-item" style="background-color: var(--primary-color);">
+                    <a href="11_postulamiento_voluntario.html" class="nav-item"
+                        style="background-color: var(--primary-color);">
                         <i class="fa-solid fa-file" style="color: black; font-size: 2.6em;"></i>
                         <p>POSTULANTES</p>
                     </a>
                 </div>
             </nav>
         </div>
-        <!--LISTA DE CONSUTLA DE LOS USUARIOS REGISTRADOS EN EL SITIO WEB-->
-        <div class="columna">
-            <div class="container-contenido">
-                <div>
-                    <button type="button">
-                        <img src="../assets/iconos/buscador.png" width="20">
-                    </button>
-                    <input type="search" id="buscador" name="buscador" placeholder="Delgado, Emilia"/> 
-                </div>
-            
-                <div>
-                    <a href="12_formulario_voluntario.html">
-                        <img src="../assets/iconos/logo_usuario.png" alt="usuario" width="70">SOLICITUD DE POSTULAMIENTO
-                        <p>Usuario: Suarez, Mica</p>
-                    </a>
-                </div>
-                
-                <div>
-                    <a href="12_formulario_voluntario.html">
-                        <img src="../assets/iconos/logo_usuario.png" alt="usuario" width="70">SOLICITUD DE POSTULAMIENTO
-                        <p>Usuario: Bensi, Lucas</p>
-                    </a>
-                </div>
-            
-                <div>
-                    <a href="12_formulario_voluntario.html">
-                        <img src="../assets/iconos/logo_usuario.png" alt="usuario" width="70">SOLICITUD DE POSTULAMIENTO
-                        <p>Usuario: Alvarez, Jessica</p>
-                    </a>
-                </div>
-            
-                <div>
-                    <a href="12_formulario_voluntario.html">
-                        <img src="../assets/iconos/logo_usuario.png" alt="usuario" width="70">SOLICITUD DE POSTULAMIENTO
-                        <p>Usuario: Olmedo, Daniel</p>
-                    </a>
-                </div>
+        <!--LISTA DE CONSULTA DE LOS USUARIOS REGISTRADOS EN EL SITIO WEB-->
+        <div class="columna" style="margin-top: 10vh; width: 70vw;">
+            <div class="buscador-usuarios" style="margin: 0;">
+                <i class="fa-solid fa-search" style="color: black; font-size: 2.6em;"></i>
+                <input type="text" placeholder="Buscar usuario">
             </div>
+
+            <a href="12_formulario_voluntario.html">
+                <div class="container-mascotas">
+                    <i class="fa-solid fa-user"  style="color: black; font-size: 5.6em; margin: 3%;"></i>
+                    <div class="columna" style="margin-left: 2em; align-items: start;">
+                        <h4>SOLICITUD DE POSTULAMIENTO</h4>
+                        <p>Usuario: Suarez, Mica</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="12_formulario_voluntario.html">
+                <div class="container-mascotas">
+                    <i class="fa-solid fa-user"  style="color: black; font-size: 5.6em; margin: 3%;"></i>
+                    <div class="columna" style="margin-left: 2em; align-items: start;">
+                        <h4>SOLICITUD DE POSTULAMIENTO</h4>
+                        <p>Usuario: Bensi, Lucas</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="12_formulario_voluntario.html">
+                <div class="container-mascotas">
+                    <i class="fa-solid fa-user"  style="color: black; font-size: 5.6em; margin: 3%;"></i>
+                    <div class="columna" style="margin-left: 2em; align-items: start;">
+                        <h4>SOLICITUD DE POSTULAMIENTO</h4>
+                        <p>Usuario: Alvarez, Jessica</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="12_formulario_voluntario.html">
+                <div class="container-mascotas">
+                    <i class="fa-solid fa-user" style="color: black; font-size: 5.6em; margin: 3%;"></i>
+                    <div class="columna" style="margin-left: 2em; align-items: start;">
+                        <h4>SOLICITUD DE POSTULAMIENTO</h4>
+                        <p>Usuario: Olmedo, Daniel</p>
+                    </div>
+                </div>
+            </a>
         </div>
     </div>
-       
-    </body>
+</body>
+
 </html>
-
-
