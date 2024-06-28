@@ -1,84 +1,94 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Modificar Publicacion</title>
-        <link rel="stylesheet" href="../estilos/estilos_Intranet.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    </head>
-    <body class="fondo_Intranet">
-        <div class="ruta-navegacion">
-            <h3>ADMINISTRACION - MODIFICAR PUBLICACION</h3>
-        </div>
-         <!--MENU DE NAVEGACION-->
-         <nav class="nav-bar">
-            <div class="columna" style="align-items: center; justify-content: space-around; height: 90vh; margin-top: 6.6vh;">
-              <a href="1_consultas.html" class="nav-item">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modificar Publicacion</title>
+    <link rel="stylesheet" href="../estilos/estilos_Intranet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body class="fondo_Intranet">
+    <div class="ruta-navegacion">
+        <h3>ADMINISTRACION - MODIFICAR PUBLICACION</h3>
+    </div>
+    <!--MENU DE NAVEGACION-->
+    <div class="fila">
+        <nav class="nav-bar">
+            <div class="columna"
+            style="align-items: center; justify-content: space-around; height: 90vh; margin-top: 6.6vh;">
+            <a href="1_consultas.html" class="nav-item">
                 <i class="fa-solid fa-envelope" style="color: black; font-size: 2.6em; ;"></i>
                 <p>CONSULTAS</p>
-              </a>
-    
-              <a href="3_usuarios.html" class="nav-item">
+            </a>
+
+            <a href="3_usuarios.html" class="nav-item">
                 <i class="fa-solid fa-user" style="color: black; font-size: 2.6em;"></i>
                 <p>USUARIOS</p>
-              </a>
-        
-              <a href="5_mod_elim_publicaciones.html" class="nav-item">
-                <i class="fa-solid fa-user" style="color: black; font-size: 2.6em;"></i>
-                <p>PUBLICACIONES</p>
-              </a>
-             
-              <a href="7_seguimientos.html" class="nav-item">
-                <i class="fa-solid fa-user" style="color: black; font-size: 2.6em;"></i>
-                <p>SEGUIMIENTOS</p>
-              </a>
-                 
-              <a href="9_pedidos_de_adopcion.html" class="nav-item">
-                <i class="fa-solid fa-user" style="color: black; font-size: 2.6em;"></i>
-                <p>PEDIDOS DE ADOPCION</p>
-              </a>
-               
-              <a href="11_postulamiento_voluntario.html" class="nav-item">
-                <i class="fa-solid fa-user" style="color: black; font-size: 2.6em;"></i>
-                <p>POSTULANTES</p>
-              </a>
-            </div>
-          </nav>
+            </a>
 
-            <div class="container-contenido">
-                <div>
-                    <a href=""><img src="../assets/imagenes/zoe.png" width="300"><br></a>
-                    <p><strong>Agregar Foto</strong></p>
-                    <form>
-                        <label for="nombre">Nombre</label><br>
-                        <input type="text" name="nombre" id="nombre" placeholder="NOMBRE" value="Zoe"> <br>
-                            
-                        <label for="especie">Especie</label><br>
-                        <input type="text" name="especie" id="especie" placeholder="ESPECIE" value="Guanaco"> <br>
-                            
-                        <label for="sexo">Sexo</label><br>
-                        <input type="text" name="sexo" id="sexo" placeholder="SEXO" value="Hembra"> <br>
-                            
-                        <label>Edad</label><br>
-                        <input type="date" name="edad" id="edad" placeholder="EDAD" value="2 Años"> <br>
-                            
-                        <label for="tamaño">Tamaño</label><br>
-                        <input type="text" name="tamaño" id="tamaño" placeholder="TAMAÑO" value="Muy Grande"> <br><br>
-                            
-                        <label for="descripcion">Descripcion</label><br>
-                        <textarea name="descripcion" id="descripcion" cols="30" rows="10" placeholder="DESCRIPCION...">Zoe es una pequeña guanaca de 2 años, de pelaje marron claro y ojos grandes.
-                        Historia: Zoe nacio un campo abierto en la patagonia, donde corria con su madre y otros guanacos. Un dia su madre murio por
-                        cazadores de la zona y ella se quedo sola. Deambulo por el campo varios dias, buscando su madre y sin saber que hacer.
-                        Estaba asustada y hambrienta. Un dia fue encontrada por una familia en la ruta, tras darle un poco de pan se apidiaron de ella y se la llevaron con ellos.
-                        Y nos la trajieron a nosotros para buscarle un hogar y darle una familia a quien se la arrebataron.</textarea><br>
-                                    
-                        <!--BOTONES-->
-                        <button type="submit"><a href="">GUARDAR<img src="../assets/iconos/aceptar.png" width="20"></button></a>
-                        <button type="button"><a href="5_mod_elim_publicaciones.html">CANCELAR</a> <img src="../assets/iconos/cancelar.png" width="20"></button>
-                    </form>
-                </div>
+            <a href="5_mod_elim_publicaciones.html" class="nav-item" style="background-color: var(--primary-color);">
+                <i class="fa-solid fa-pen-to-square" style="color: black; font-size: 2.6em;"></i>
+                <p>PUBLICACIONES</p>
+            </a>
+
+            <a href="7_seguimientos.html" class="nav-item">
+                <i class="fa-solid fa-file" style="color: black; font-size: 2.6em;"></i>
+                <p>SEGUIMIENTOS</p>
+            </a>
+
+            <a href="9_pedidos_de_adopcion.html" class="nav-item">
+                <i class="fa-solid fa-file" style="color: black; font-size: 2.6em;"></i>
+                <p>PEDIDOS DE ADOPCION</p>
+            </a>
+
+            <a href="11_postulamiento_voluntario.html" class="nav-item">
+                <i class="fa-solid fa-file" style="color: black; font-size: 2.6em;"></i>
+                <p>POSTULANTES</p>
+            </a>
+        </div>
+        </nav>
+
+        <div class="container-contenido">
+            <div>
+                <a href=""><img src="../assets/imagenes/zoe.png" width="300"><br></a>
+                <p><strong>Agregar Foto</strong></p>
+                <form>
+                    <label for="nombre">Nombre</label><br>
+                    <input type="text" name="nombre" id="nombre" placeholder="NOMBRE" value="Zoe"> <br>
+
+                    <label for="especie">Especie</label><br>
+                    <input type="text" name="especie" id="especie" placeholder="ESPECIE" value="Guanaco"> <br>
+
+                    <label for="sexo">Sexo</label><br>
+                    <input type="text" name="sexo" id="sexo" placeholder="SEXO" value="Hembra"> <br>
+
+                    <label>Edad</label><br>
+                    <input type="date" name="edad" id="edad" placeholder="EDAD" value="2 Años"> <br>
+
+                    <label for="tamaño">Tamaño</label><br>
+                    <input type="text" name="tamaño" id="tamaño" placeholder="TAMAÑO" value="Muy Grande"> <br><br>
+
+                    <label for="descripcion">Descripcion</label><br>
+                    <textarea name="descripcion" id="descripcion" cols="30" rows="10"
+                        placeholder="DESCRIPCION...">Zoe es una pequeña guanaca de 2 años, de pelaje marron claro y ojos grandes.
+                            Historia: Zoe nacio un campo abierto en la patagonia, donde corria con su madre y otros guanacos. Un dia su madre murio por
+                            cazadores de la zona y ella se quedo sola. Deambulo por el campo varios dias, buscando su madre y sin saber que hacer.
+                            Estaba asustada y hambrienta. Un dia fue encontrada por una familia en la ruta, tras darle un poco de pan se apidiaron de ella y se la llevaron con ellos.
+                            Y nos la trajieron a nosotros para buscarle un hogar y darle una familia a quien se la arrebataron.</textarea><br>
+
+                    <!--BOTONES-->
+                    <button type="submit"><a href="">GUARDAR<img src="../assets/iconos/aceptar.png"
+                                width="20"></button></a>
+                    <button type="button"><a href="5_mod_elim_publicaciones.html">CANCELAR</a> <img
+                            src="../assets/iconos/cancelar.png" width="20"></button>
+                </form>
             </div>
         </div>
-    </body>
+    </div>
+    </div>
+
+</body>
+
 </html>

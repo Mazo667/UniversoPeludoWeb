@@ -1,72 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Reponder Consultas</title>
-        <link rel="stylesheet" href="../estilos/estilos_Intranet.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    </head>
-    <body class="fondo_Intranet">
-        <div class="ruta-navegacion">
-            <h3>ADMINISTRACION - RESPONDER CONSULTAS</h3>
-        </div>
 
-        <!--MENU DE NAVEGACION-->
-        <nav class="nav-bar">
-            <div class="columna" style="align-items: center; justify-content: space-around; height: 90vh; margin-top: 6.6vh;">
-              <a href="1_consultas.html" class="nav-item">
-                <i class="fa-solid fa-envelope" style="color: black; font-size: 2.6em; ;"></i>
-                <p>CONSULTAS</p>
-              </a>
-    
-              <a href="3_usuarios.html" class="nav-item">
-                <i class="fa-solid fa-user" style="color: black; font-size: 2.6em;"></i>
-                <p>USUARIOS</p>
-              </a>
-        
-              <a href="5_mod_elim_publicaciones.html" class="nav-item">
-                <i class="fa-solid fa-user" style="color: black; font-size: 2.6em;"></i>
-                <p>PUBLICACIONES</p>
-              </a>
-             
-              <a href="7_seguimientos.html" class="nav-item">
-                <i class="fa-solid fa-user" style="color: black; font-size: 2.6em;"></i>
-                <p>SEGUIMIENTOS</p>
-              </a>
-                 
-              <a href="9_pedidos_de_adopcion.html" class="nav-item">
-                <i class="fa-solid fa-user" style="color: black; font-size: 2.6em;"></i>
-                <p>PEDIDOS DE ADOPCION</p>
-              </a>
-               
-              <a href="11_postulamiento_voluntario.html" class="nav-item">
-                <i class="fa-solid fa-user" style="color: black; font-size: 2.6em;"></i>
-                <p>POSTULANTES</p>
-              </a>
-            </div>
-          </nav>
-            <!--RESPONDER LA CONSULTA DEL USUARIO SELECCIONADO-->
-            <div class="container-contenido">
-                <div class="container-tranlucido">
-                    <form>
-                        <h4>De: micasuarez@gmail.com</h4>
-                        <hr>
-                        <p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reponder Consultas</title>
+    <link rel="stylesheet" href="../estilos/estilos_Intranet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body class="fondo_Intranet">
+    <div class="ruta-navegacion">
+        <h3>ADMINISTRACION - RESPONDER CONSULTAS</h3>
+    </div>
+
+    <!--MENU DE NAVEGACION-->
+    <div class="fila">
+        <div class="columna">
+            <nav class="nav-bar">
+                <div class="columna"
+                    style="align-items: center; justify-content: space-around; height: 90vh; margin-top: 6.6vh;">
+                    <a href="1_consultas.html" class="nav-item" style="background-color: var(--primary-color);">
+                        <i class="fa-solid fa-envelope" style="color: black; font-size: 2.6em; ;"></i>
+                        <p>CONSULTAS</p>
+                    </a>
+
+                    <a href="3_usuarios.html" class="nav-item">
+                        <i class="fa-solid fa-user" style="color: black; font-size: 2.6em;"></i>
+                        <p>USUARIOS</p>
+                    </a>
+
+                    <a href="5_mod_elim_publicaciones.html" class="nav-item">
+                        <i class="fa-solid fa-pen-to-square" style="color: black; font-size: 2.6em;"></i>
+                        <p>PUBLICACIONES</p>
+                    </a>
+
+                    <a href="7_seguimientos.html" class="nav-item">
+                        <i class="fa-solid fa-file" style="color: black; font-size: 2.6em;"></i>
+                        <p>SEGUIMIENTOS</p>
+                    </a>
+
+                    <a href="9_pedidos_de_adopcion.html" class="nav-item">
+                        <i class="fa-solid fa-file" style="color: black; font-size: 2.6em;"></i>
+                        <p>PEDIDOS DE ADOPCION</p>
+                    </a>
+
+                    <a href="11_postulamiento_voluntario.html" class="nav-item">
+                        <i class="fa-solid fa-file" style="color: black; font-size: 2.6em;"></i>
+                        <p>POSTULANTES</p>
+                    </a>
+                </div>
+            </nav>
+        </div>
+        <div class="columna" style="margin-top: 7%;">
+            <div class="contenedor-nueva-publicacion">
+                <form>
+                    <h4 style="color: white;">De: micasuarez@gmail.com</h4>
+                    <hr>
+                    <p style="color: white;">
                         Tengo una consulta, ¿Cual es el horario de apertura del Refugio para poder ir a
                         buscar a la guanaca Zoe?
-                        </p>
-                        <hr>
-                        <textarea  cols="50" rows="10"  id="respuesta" placeholder="Respuesta..." name="respuesta"></textarea>
-                        <br>
+                    </p>
+                    <hr>
+                    <div class="input-datos" style="background-color: transparent; box-shadow: none;">
+                        <textarea  cols="50" rows="10" id="respuesta" placeholder="Respuesta..."
+                            name="respuesta"></textarea>
+                    </div>
+                    <br>
+                    <div class="fila" style="justify-content: end;">
                         <button type="submit"> ENVIAR <img src="../assets/iconos/aceptar.png" width="20"></button>
-                        <button type="button"> <a href="1_consultas.html">CANCELAR<img src="../assets/iconos/cancelar.png" width="20"></button></a>
-                    </form>
-                </div>
-
+                        <button type="button"> <a href="1_consultas.html">CANCELAR</a><img src="../assets/iconos/cancelar.png" width="20"></button>
+                    </div>
+                </form>
             </div>
-
         </div>
+    </div>
+</body>
 
-    </body>
 </html>

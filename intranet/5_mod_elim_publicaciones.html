@@ -1,96 +1,124 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-       <meta charset="UTF-8">
-       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Modificar y Eliminar Publicacion</title>
-      <link rel="stylesheet" href="../estilos/estilos_Intranet.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    </head>
-    <body class="fondo_Intranet">
-        <div class="ruta-navegacion">
-            <h3>ADMINISTRACION - PUBLICACIONES </h3>
-        </div>
-        <!--MENU DE NAVEGACION-->
-        <nav class="nav-bar">
-            <div class="columna" style="align-items: center; justify-content: space-around; height: 90vh; margin-top: 6.6vh;">
-              <a href="1_consultas.html" class="nav-item">
-                <i class="fa-solid fa-envelope" style="color: black; font-size: 2.6em; ;"></i>
-                <p>CONSULTAS</p>
-              </a>
-    
-              <a href="3_usuarios.html" class="nav-item">
-                <i class="fa-solid fa-user" style="color: black; font-size: 2.6em;"></i>
-                <p>USUARIOS</p>
-              </a>
-        
-              <a href="5_mod_elim_publicaciones.html" class="nav-item">
-                <i class="fa-solid fa-user" style="color: black; font-size: 2.6em;"></i>
-                <p>PUBLICACIONES</p>
-              </a>
-             
-              <a href="7_seguimientos.html" class="nav-item">
-                <i class="fa-solid fa-user" style="color: black; font-size: 2.6em;"></i>
-                <p>SEGUIMIENTOS</p>
-              </a>
-                 
-              <a href="9_pedidos_de_adopcion.html" class="nav-item">
-                <i class="fa-solid fa-user" style="color: black; font-size: 2.6em;"></i>
-                <p>PEDIDOS DE ADOPCION</p>
-              </a>
-               
-              <a href="11_postulamiento_voluntario.html" class="nav-item">
-                <i class="fa-solid fa-user" style="color: black; font-size: 2.6em;"></i>
-                <p>POSTULANTES</p>
-              </a>
-            </div>
-          </nav>
-            <!--MODIFICAR, ELIMINAR O SUBIR NUEVA PUBLICACION-->
 
-            <div class="container-contenido">
-                <img src="../assets/imagenes/zoe.png" width="300">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modificar y Eliminar Publicacion</title>
+    <link rel="stylesheet" href="../estilos/estilos_Intranet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body class="fondo_Intranet">
+    <div class="ruta-navegacion">
+        <h3>ADMINISTRACION - PUBLICACIONES </h3>
+    </div>
+    <!--MENU DE NAVEGACION-->
+    <div class="fila">
+        <div class="columna">
+            <nav class="nav-bar">
+                <div class="columna"
+                    style="align-items: center; justify-content: space-around; height: 90vh; margin-top: 6.6vh;">
+                    <a href="1_consultas.html" class="nav-item">
+                        <i class="fa-solid fa-envelope" style="color: black; font-size: 2.6em; ;"></i>
+                        <p>CONSULTAS</p>
+                    </a>
+
+                    <a href="3_usuarios.html" class="nav-item">
+                        <i class="fa-solid fa-user" style="color: black; font-size: 2.6em;"></i>
+                        <p>USUARIOS</p>
+                    </a>
+
+                    <a href="5_mod_elim_publicaciones.html" class="nav-item" style="background-color: var(--primary-color);">
+                        <i class="fa-solid fa-pen-to-square" style="color: black; font-size: 2.6em;"></i>
+                        <p>PUBLICACIONES</p>
+                    </a>
+
+                    <a href="7_seguimientos.html" class="nav-item">
+                        <i class="fa-solid fa-file" style="color: black; font-size: 2.6em;"></i>
+                        <p>SEGUIMIENTOS</p>
+                    </a>
+
+                    <a href="9_pedidos_de_adopcion.html" class="nav-item">
+                        <i class="fa-solid fa-file" style="color: black; font-size: 2.6em;"></i>
+                        <p>PEDIDOS DE ADOPCION</p>
+                    </a>
+
+                    <a href="11_postulamiento_voluntario.html" class="nav-item">
+                        <i class="fa-solid fa-file" style="color: black; font-size: 2.6em;"></i>
+                        <p>POSTULANTES</p>
+                    </a>
+                </div>
+            </nav>
+        </div>
+        <!--MODIFICAR, ELIMINAR O SUBIR NUEVA PUBLICACION-->
+        <div class="columna">
+            <div class="container-publicacion">
                 <p>
                     Zoe es una pequeña guanaca de 2 años, de pelaje marron claro y ojos grandes. <br>
-                    Historia: Zoe nacio un campo abierto en la patagonia, donde corria con su madre y otros guanacos. Un dia su madre murio por <br>
-                    cazadores de la zona y ella se quedo sola. Deambulo por el campo varios dias, buscando su madre y sin saber que hacer. <br>
-                    Estaba asustada y hambrienta. Un dia fue encontrada por una familia en la ruta, tras darle un poco de pan se apidiaron de ella y se la llevaron con ellos. <br>
-                    Y nos la trajieron a nosotros para buscarle un hogar y darle una familia a quien se la arrebataron. <br><br>
-                                            
-                    <!--BOTONES-->
-                    <button type="button"> <a href="13_modificar_publicacion.html">MODIFICAR </a><img src="../assets/iconos/aceptar.png" width="20"></button>
-                    <form>
-                        <button type="submit" name="eliminar"> ELIMINAR <img src="../assets/iconos/cancelar.png" width="20"></button>
-                    </form>
-                </p>
-                <img src="../assets/imagenes/toby.png" width="300">
-                    <p>
-                        Toby es un adorable cachorrito de pelaje marron y ojos claros. Apenas tiene 3 meses y es una bolita de pelos lleno de energia. <br>
-                        Historia: Toby nacio en Rawson, junto a sus hermanos. Desgraciadamente se incendio su hogar, obligando a Toby a huir aterrorizado de las llamas y el humo, <br>
-                        deambulo por la zona y fue encontrado bajo un auto temblando y con el pelaje chasmuscado por el fuego. Lo trajieron a nuestro refugio para realizarle curaciones <br>
-                        y darle un nuevo hogar. <br><br>
+                    Historia: Zoe nacio un campo abierto en la patagonia, donde corria con su madre y otros guanacos. Un
+                    dia su madre murio por <br>
+                    cazadores de la zona y ella se quedo sola. Deambulo por el campo varios dias, buscando su madre y
+                    sin saber que hacer. <br>
+                    Estaba asustada y hambrienta. Un dia fue encontrada por una familia en la ruta, tras darle un poco
+                    de pan se apidiaron de ella y se la llevaron con ellos. <br>
+                    Y nos la trajieron a nosotros para buscarle un hogar y darle una familia a quien se la arrebataron.
 
-                        <!--BOTONES-->
-                        <button type="button"> <a href="#">MODIFICAR </a><img src="../assets/iconos/aceptar.png" width="20"></button>
-                            <form>
-                                <button type="submit" name="eliminar"> ELIMINAR <img src="../assets/iconos/cancelar.png" width="20"></button>
-                            </form>
-                    </p>
-                <img src="../assets/imagenes/pelusa.png" width="300">
-                    <p>
-                        Pelusa es una gatita muy curiosa y amigable, de pelaje castaño con apenas 1 mes de edad. <br>
-                        Historia: Pelusa fue rescatada de una caja de cartón abandonada en la calle. Una mujer que paseaba a su perro la escuchó maullar y la encontró junto a sus hermanos, <br>
-                        todos muy débiles y hambrientos. Los llevó a su casa y les dio de comer y beber. Al ser tan pequeños necesitan de cuidados especiales, por lo <br>
-                        que la mujer se contacto con el refugio para ser desparasitada, vacunada y alimentada. En la busqueda de un hogar. <br><br>
-                                        
-                        <!--BOTONES-->
-                    <button type="button"> <a href="#">MODIFICAR </a><img src="../assets/iconos/aceptar.png" width="20"></button>
-                        <form>
-                            <button type="submit" name="eliminar"> ELIMINAR <img src="../assets/iconos/cancelar.png" width="20"></button>
-                        </form>
-                    </p>
-                <!--BOTON PARA REALIZAR UNA NUEVA PUBLICACION-->
-                <button type="button"><a href="6_nueva_publicacion.html">NUEVA PUBLICACION</a></button>
+                    <!--BOTONES-->
+                    <button type="button"> <a href="13_modificar_publicacion.html">MODIFICAR </a><img
+                            src="../assets/iconos/aceptar.png" width="20"></button>
+                <form>
+                    <button type="submit" name="eliminar"> ELIMINAR <img src="../assets/iconos/cancelar.png"
+                            width="20"></button>
+                </form>
+                </p>
+                <img src="../assets/imagenes/zoe.png" width="300">
             </div>
+            <div class="container-publicacion">
+                <img src="../assets/imagenes/toby.png" width="300">
+                <p>
+                    Toby es un adorable cachorrito de pelaje marron y ojos claros. Apenas tiene 3 meses y es una bolita
+                    de pelos lleno de energia. <br>
+                    Historia: Toby nacio en Rawson, junto a sus hermanos. Desgraciadamente se incendio su hogar,
+                    obligando a Toby a huir aterrorizado de las llamas y el humo, <br>
+                    deambulo por la zona y fue encontrado bajo un auto temblando y con el pelaje chasmuscado por el
+                    fuego. Lo trajieron a nuestro refugio para realizarle curaciones <br>
+                    y darle un nuevo hogar.
+
+                    <!--BOTONES-->
+                    <button type="button"> <a href="#">MODIFICAR </a><img src="../assets/iconos/aceptar.png"
+                            width="20"></button>
+                <form>
+                    <button type="submit" name="eliminar"> ELIMINAR <img src="../assets/iconos/cancelar.png"
+                            width="20"></button>
+                </form>
+                </p>
+            </div>
+            <div class="container-publicacion">
+                <img src="../assets/imagenes/pelusa.png" width="300">
+
+                <p>
+                    Pelusa es una gatita muy curiosa y amigable, de pelaje castaño con apenas 1 mes de edad. <br>
+                    Historia: Pelusa fue rescatada de una caja de cartón abandonada en la calle. Una mujer que paseaba a
+                    su perro la escuchó maullar y la encontró junto a sus hermanos, <br>
+                    todos muy débiles y hambrientos. Los llevó a su casa y les dio de comer y beber. Al ser tan pequeños
+                    necesitan de cuidados especiales, por lo <br>
+                    que la mujer se contacto con el refugio para ser desparasitada, vacunada y alimentada. En la
+                    busqueda de un hogar.
+
+                    <!--BOTONES-->
+                    <button type="button"> <a href="#">MODIFICAR </a><img src="../assets/iconos/aceptar.png"
+                            width="20"></button>
+                <form>
+                    <button type="submit" name="eliminar"> ELIMINAR <img src="../assets/iconos/cancelar.png"
+                            width="20"></button>
+                </form>
+                </p>
+            </div>
+            <!--BOTON PARA REALIZAR UNA NUEVA PUBLICACION-->
+            <button type="button"><a href="6_nueva_publicacion.html">NUEVA PUBLICACION</a></button>
         </div>
-    </body>
+    </div>
+</body>
+
 </html>

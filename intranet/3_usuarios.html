@@ -1,85 +1,89 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Usuarios Registrados</title>
-        
-        <link rel="stylesheet" href="../estilos/estilos_Intranet.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    </head>
-    <body class="fondo_Intranet">
-      <div class="ruta-navegacion">
-        <h3>ADMINISTRACION - USUARIOS</h3>
-      </div>
-      <div class="fila">
-        <div class="columna">
-          <nav class="nav-bar">
-            <div class="columna" style="align-items: center; justify-content: space-around; height: 90vh; margin-top: 6.6vh;">
-              <a href="1_consultas.html" class="nav-item">
-                <i class="fa-solid fa-envelope" style="color: black; font-size: 2.6em; ;"></i>
-                <p>CONSULTAS</p>
-              </a>
-    
-              <a href="3_usuarios.html" class="nav-item">
-                <i class="fa-solid fa-user" style="color: black; font-size: 2.6em;"></i>
-                <p>USUARIOS</p>
-              </a>
-        
-              <a href="5_mod_elim_publicaciones.html" class="nav-item">
-                <i class="fa-solid fa-user" style="color: black; font-size: 2.6em;"></i>
-                <p>PUBLICACIONES</p>
-              </a>
-             
-              <a href="7_seguimientos.html" class="nav-item">
-                <i class="fa-solid fa-user" style="color: black; font-size: 2.6em;"></i>
-                <p>SEGUIMIENTOS</p>
-              </a>
-                 
-              <a href="9_pedidos_de_adopcion.html" class="nav-item">
-                <i class="fa-solid fa-user" style="color: black; font-size: 2.6em;"></i>
-                <p>PEDIDOS DE ADOPCION</p>
-              </a>
-               
-              <a href="11_postulamiento_voluntario.html" class="nav-item">
-                <i class="fa-solid fa-user" style="color: black; font-size: 2.6em;"></i>
-                <p>POSTULANTES</p>
-              </a>
-            </div>
-          </nav>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Usuarios Registrados</title>
+
+  <link rel="stylesheet" href="../estilos/estilos_Intranet.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body class="fondo_Intranet">
+  <div class="ruta-navegacion">
+    <h3>ADMINISTRACION - USUARIOS</h3>
+  </div>
+  <div class="fila">
+    <div class="columna">
+      <nav class="nav-bar">
+        <div class="columna"
+          style="align-items: center; justify-content: space-around; height: 90vh; margin-top: 6.6vh;">
+          <a href="1_consultas.html" class="nav-item">
+            <i class="fa-solid fa-envelope" style="color: black; font-size: 2.6em; ;"></i>
+            <p>CONSULTAS</p>
+          </a>
+
+          <a href="3_usuarios.html" class="nav-item" style="background-color: var(--primary-color);">
+            <i class="fa-solid fa-user" style="color: black; font-size: 2.6em;"></i>
+            <p>USUARIOS</p>
+          </a>
+
+          <a href="5_mod_elim_publicaciones.html" class="nav-item">
+            <i class="fa-solid fa-pen-to-square" style="color: black; font-size: 2.6em;"></i>
+            <p>PUBLICACIONES</p>
+          </a>
+
+          <a href="7_seguimientos.html" class="nav-item">
+            <i class="fa-solid fa-file" style="color: black; font-size: 2.6em;"></i>
+            <p>SEGUIMIENTOS</p>
+          </a>
+
+          <a href="9_pedidos_de_adopcion.html" class="nav-item">
+            <i class="fa-solid fa-file" style="color: black; font-size: 2.6em;"></i>
+            <p>PEDIDOS DE ADOPCION</p>
+          </a>
+
+          <a href="11_postulamiento_voluntario.html" class="nav-item">
+            <i class="fa-solid fa-file" style="color: black; font-size: 2.6em;"></i>
+            <p>POSTULANTES</p>
+          </a>
         </div>
-        <div class="columna" style="margin-top: 10vh;">
+      </nav>
+    </div>
+    <div class="columna" style="margin-top: 10vh;">
 
-          <div class="buscador-usuarios">
-            <i class="fa-solid fa-search" style="color: black; font-size: 2.6em;"></i>
-            <input type="text" placeholder="Buscar usuario">
-          </div>
-
-          <div class="contenedor-usuario">
-            <div class="usuario-header">
-              <i class="fa-solid fa-user" style="color: black; font-size: 2.6em;"></i>
-                <p>USUARIO</p>
-                  <i class="fa-solid fa-chevron-down icono-acordeon"></i>
-                    </div>
-                    <div class="informacion-usuario" style="display: none;">
-                        <!-- Agrega aquí la información adicional del usuario -->
-                        <p>Detalles del usuario...</p>
-                    </div>
-                </div>
-
-                <div id="accordion-1">
-                    <div class="head">
-                      <h2>1. Simple Accordion</h2>
-                      <i class="fas fa-angle-down arrow"></i>
-                    </div>
-                    <div class="content">
-                      <p>An accordion is used to show and hide content. It can be usually found in Q & A section.</p>
-                    </div>
-                  </div>
-
-          </div>
+      <div class="buscador-usuarios">
+        <i class="fa-solid fa-search" style="color: black; font-size: 2.6em;"></i>
+        <input type="text" placeholder="Buscar usuario">
       </div>
-        <script src="../scripting/desplegables.js"></script>
-    </body>
+
+      <div class="contenedor-usuario">
+        <div class="usuario-header">
+          <i class="fa-solid fa-user" style="color: black; font-size: 2.6em;"></i>
+          <p>USUARIO</p>
+          <i class="fa-solid fa-chevron-down icono-acordeon"></i>
+        </div>
+        <div class="informacion-usuario" style="display: none;">
+          <!-- Agrega aquí la información adicional del usuario -->
+          <p>Detalles del usuario...</p>
+        </div>
+      </div>
+
+      <div id="accordion-1">
+        <div class="head">
+          <h2>1. Simple Accordion</h2>
+          <i class="fas fa-angle-down arrow"></i>
+        </div>
+        <div class="content">
+          <p>An accordion is used to show and hide content. It can be usually found in Q & A section.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <script src="../scripting/desplegables.js"></script>
+</body>
+
 </html>
