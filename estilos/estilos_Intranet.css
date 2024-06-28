@@ -35,6 +35,7 @@ button[type="menu"] {
     font-weight: bolder;
     text-align: center;
     max-width: 20%;
+    min-width: 15%;
 
     a {
         text-decoration: none;
@@ -363,8 +364,7 @@ button[type="menu"] {
     display: flex;
     align-items: center;
     padding: 1em 1.4em;
-    width: 68vw;
-    margin-left: 20vw;
+    width: 95%;
 
     input {
         margin-left: 2%;
