@@ -247,9 +247,10 @@ button[type="menu"] {
         color: var(--primary-color);
     }
 }
+
 .container-mascotas {
-     display: flex; 
-     justify-content: start; 
+    display: flex;
+    justify-content: start;
     background-color: var(--gris-translucido);
     border-radius: 20px;
     width: 70vw;
@@ -492,6 +493,7 @@ button[type="menu"] {
     padding: 0;
     list-style: none;
     width: 70vw;
+
     li {
         font-size: 1.09em;
         font-family: 'Inter';
@@ -613,7 +615,7 @@ button[type="menu"] {
 }
 
 .profile-info p {
-    margin: 5px 0;
+    margin: 1% 0%;
 }
 
 .contract-section {
@@ -633,6 +635,7 @@ button[type="menu"] {
 
 .contract-info {
     flex: 1;
+    margin-right: 2%;
 }
 
 .contract-info h3 {
@@ -674,4 +677,12 @@ button[type="menu"] {
 
 .contract-info ul li {
     margin: 5px 0;
+}
+
+.separador {
+    border: none;
+    height: 2px;/* Grosor de la línea */
+    background-color: #ffffffa0;/* Color de la línea */
+    margin: 2% 0; /* Espaciado alrededor de la línea */
+    width: 97%;
 }
