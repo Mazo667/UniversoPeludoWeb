@@ -1,6 +1,7 @@
 function slide(link) {
-  
+   // Anima el despliegue del contenido del acordeón
   var down = function (callback, time) {
+     // Obtiene el elemento hermano (el contenido a desplegar)
     var subMenu = link.nextElementSibling;
     var height = subMenu.clientHeight; 
     var part = height / 100;
@@ -9,7 +10,7 @@ function slide(link) {
     var paddingBottom = parseInt(window.getComputedStyle(subMenu, null).getPropertyValue('padding-bottom'));
     var paddingTopPart = parseInt(paddingTop) / 50;
     var paddingBottomPart = parseInt(paddingBottom) / 30;
-    
+     // Calcula la altura y el relleno para la animación
     (function innerFunc(i, t, b) {
 
       subMenu.style.height = i + 'px';
@@ -44,6 +45,7 @@ function slide(link) {
     })(0, 0, 0);
   },
   
+   // Anima la contracción del contenido del acordeón
   up = function (callback, time) {
       
     var subMenu = link.nextElementSibling;
@@ -53,7 +55,7 @@ function slide(link) {
     var paddingBottom = parseInt(window.getComputedStyle(subMenu).paddingBottom);
     var paddingTopPart = parseInt(paddingTop) / 30;
     var paddingBottomPart = parseInt(paddingBottom) / 50;
-
+     // Función recursiva para animar el despliegue
     (function innerFunc(i, t, b) {
 
       subMenu.style.height = i + 'px';
@@ -96,9 +98,9 @@ function slide(link) {
     up: up
   }
 } 
-    
+// Inicializa el acordeón
 var accordion = (function() {
-
+   // Selecciona todos los elementos del acordeón y prepara variables
     var menu = document.querySelectorAll('.accordion');
     var activeClass = 'accordion__link_active';
     var arr = [];
@@ -115,13 +117,13 @@ var accordion = (function() {
             }
         }
     }
-       
+     // Función para manejar el clic en los enlaces del acordeón
     function accordionInner(i) {
             
       var clicked = false;
       
       menu[i].addEventListener('click', function(e) {
-
+        // Verifica si el enlace ya está activo y maneja la lógica de activación/desactivación
         if(e.target.tagName === 'A' && !clicked) {
 
           clicked = true;
@@ -169,7 +171,7 @@ var accordion = (function() {
       });
       
       i++;
-      
+       // Recursivamente añade event listeners a todos los enlaces
       if(i < menu.length) { accordionInner(i); }
         
     } accordionInner(0);
