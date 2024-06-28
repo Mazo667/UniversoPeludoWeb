@@ -20,25 +20,26 @@ button[type="submit"],
 button[type="reset"],
 button[type="button"],
 button[type="menu"] {
-    background-color: rgb(61, 58, 63);
+    background-color: var(--secondary-color);
     color: white;
     border-radius: 30px;
-    margin-top: 2%;
     font-weight: bold;
     justify-content: center;
     align-items: center;
-    padding: 1% 3%;
+    padding: 1% 1%;
     flex: 1;
     display: flex;
     flex-direction: row;
+    font-size: 0.8em;
+    font-family: 'Inter';
+    font-weight: bolder;
+    text-align: center;
+    max-width: 20%;
 
     a {
         text-decoration: none;
         color: var(--primary-color);
-        font-family: 'Inter';
-        font-weight: bolder;
-        text-align: center;
-        font-size: 1.2em;
+  
     }
 }
 
@@ -250,8 +251,10 @@ button[type="menu"] {
     display: flex;
     justify-content: start;
     background-color: var(--gris-translucido);
+    align-items:center;
     border-radius: 20px;
-    width: 70vw;
+    width: 100%;
+    height: auto;
     margin: 1% 0;
 
     h4 {
@@ -265,16 +268,15 @@ button[type="menu"] {
     p {
         font-family: 'Inter';
         font-weight: bolder;
-        font-size: 1.2em;
+        font-size: 0.8em;
         color: var(--primary-color);
-        margin-top: 7%;
+        text-overflow: ellipsis;
     }
 
     img {
         border-radius: 20px;
-        height: auto;
-        width: 17em;
-
+        height: 100%;
+        width: auto;
     }
 
     .botones {
@@ -424,24 +426,6 @@ button[type="menu"] {
     display: block;
 }
 
-
-button[type="submit"],
-button[type="reset"],
-button[type="button"],
-button[type="menu"] {
-    background-color: rgb(61, 58, 63);
-    color: var(--primary-color);
-    border-radius: 30px;
-    margin-top: 2%;
-    font-weight: bold;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 20px;
-    flex: 1;
-    max-width: 150px;
-    /* Ancho máximo del botón */
-}
-
 /* Media Queries para adaptabilidad */
 @media (max-width: 768px) {
     .navegacion_intranet {
@@ -577,9 +561,6 @@ button[type="menu"] {
     display: block;
     height: 100%;
 }
-
-
-
 
 
 .profile-container {
