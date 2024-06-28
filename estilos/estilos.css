@@ -437,7 +437,7 @@ input[type="text"], input[type="email"], input[type="password"], input[type="num
 }
 
 .contenido {
-    margin: 1em;
+    margin: 1.8em 1em;
     min-height: 77.6vh;
     padding: 1em;
 }

@@ -44,8 +44,8 @@ function esNroCelularValido (numeroCelular) {
     return validacionNumero.test(numeroCelular);
 }
 
-function esEmailValido (email) {
-    const validacionEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+function esEmailValido(email) {
+    const validacionEmail = /^(?:[a-zA-Z0-9_'^&/+-])+(?:\.(?:[a-zA-Z0-9_'^&/+-])+)*@(?:[a-zA-Z0-9-]+\.)+[a-zA-Z]{2,7}$/;
     return validacionEmail.test(email);
 }
 
