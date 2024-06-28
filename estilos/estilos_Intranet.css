@@ -11,11 +11,34 @@ body.fondo_Intranet { /*FONDO DE LAS PAGINAS DE INTRANET*/
     background-position: center;
 }
 
+button[type="submit"], button[type="reset"], button[type="button"],button[type="menu"]{
+    background-color: rgb(61, 58, 63);
+    color: white;
+    border-radius: 30px;
+    margin-top: 2%;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    padding: 1% 3%;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+
+    a {
+        text-decoration: none;
+        color: var(--primary-color);
+        font-family: 'Inter';
+        font-weight: bolder;
+        text-align: center;
+        font-size: 1.2em;
+    }
+}
+
 /* Variables */
 :root {
     --primary-color: #FFFFFF;
     --secondary-color: #424242;
-    --gris-translucido: #303030;
+    --gris-translucido: rgba(128, 128, 128, 0.566);
 }
 
 /* Mixins */
@@ -113,11 +136,29 @@ body.fondo_Intranet { /*FONDO DE LAS PAGINAS DE INTRANET*/
 
 }
 
+.contenedor-agregar-foto{
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    padding: 5% 10%;
+    margin-right: 10%;
+    box-sizing: border-box;
+    width: 20vw;
+    height: 29vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: var(--primary-color);
+}
+
 .contenedor-nueva-publicacion{
     background-color: var(--gris-translucido);
-    padding: 2%;
+    padding: 2% 5%;
     border-radius: 10px;
-    display: grid;
+    margin: 0%;
+    width: 100%;
+    height: 70%;
 }
 
 .container-tranlucido{
@@ -137,10 +178,7 @@ body.fondo_Intranet { /*FONDO DE LAS PAGINAS DE INTRANET*/
         height: 100%;
     }
 
-    a {
-        text-decoration: none;
-        color: var(--primary-color);
-    }
+  
 }
 
 
@@ -194,7 +232,6 @@ body.fondo_Intranet { /*FONDO DE LAS PAGINAS DE INTRANET*/
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin-top: 8%;
     width: 100%;
 }
 
@@ -255,6 +292,52 @@ body.fondo_Intranet { /*FONDO DE LAS PAGINAS DE INTRANET*/
   }
 /* FIN ACCORDION */
 
+.input-datos {
+    background-color: var(--secondary-color);
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    padding: 0.8em 2em;
+    margin: 2% 0;
+    color: white;
+    box-sizing: border-box;
+
+    input {
+        margin-left: 2%;
+        border: none;
+        background: none;
+        text-decoration: none;
+        box-shadow: none;
+        color: white;
+        width: 20vw;
+        font-size: 1em;
+        font-family: 'Inter';
+        font-weight: bolder;
+    }
+
+    textarea{
+        border: none;
+        background: none;
+        cursor: auto;
+        resize: none;
+        font-size: 1em;
+        font-family: 'Inter';
+        font-weight: bolder;
+        width: 43vw;
+    }
+
+    textarea:active, textarea:focus, textarea::placeholder{
+        outline: none;
+        color: white;
+    }
+
+    input:active, input:focus, input::placeholder{
+        outline: none;
+        color: white;
+    }
+}
+
 .buscador-usuarios {
     background-color: var(--gris-translucido);
     border-radius: 20px;
@@ -285,9 +368,7 @@ body.fondo_Intranet { /*FONDO DE LAS PAGINAS DE INTRANET*/
     position: fixed;
     top: 0;
     left: 0;
-    height: 90vh;
-    margin-top: 8vh;
-    margin-bottom: 2vh;
+    height: 100vh;
     width: 15vw;
     background-color: var(--secondary-color);
     padding: 1em;
@@ -300,8 +381,15 @@ body.fondo_Intranet { /*FONDO DE LAS PAGINAS DE INTRANET*/
     list-style: none;
     margin: 0;
     padding: 0;
+    margin-top: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
   }
-  
+  li {
+    padding: 4%;
+  }
   .nav-item {
     display: block;
     padding: 8%;
