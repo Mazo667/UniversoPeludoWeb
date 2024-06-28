@@ -486,6 +486,7 @@ button[type="menu"] {
 	margin: 0;
 	padding: 0;
 	list-style: none;
+
 }
 .accordion__item {
 	background: var(--secondary-color);
