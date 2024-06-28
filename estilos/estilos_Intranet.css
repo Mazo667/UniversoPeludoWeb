@@ -58,7 +58,6 @@ button[type="menu"] {
     }
 }
 
-
 .ruta-navegacion {
     /*RUTA DE NAVEGACION*/
     background-color: var(--secondary-color);
@@ -142,7 +141,6 @@ button[type="menu"] {
     background-color: var(--primary-color);
     box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.5);
 }
-
 
 .container-contenido {
     display: flex;
@@ -630,7 +628,6 @@ button[type="menu"] {
     margin-top: 10%;
     width: 95%;
     height: auto;
-
 }
 
 .contract-info {
@@ -681,8 +678,64 @@ button[type="menu"] {
 
 .separador {
     border: none;
-    height: 2px;/* Grosor de la línea */
-    background-color: #ffffffa0;/* Color de la línea */
-    margin: 2% 0; /* Espaciado alrededor de la línea */
+    height: 2px;
+    /* Grosor de la línea */
+    background-color: #ffffffa0;
+    /* Color de la línea */
+    margin: 1% 0;
+    /* Espaciado alrededor de la línea */
     width: 97%;
+}
+.separador-vertical {
+    height: 17vh;
+    width: 0px;
+    background-color: #ffffffa0;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.container-solicitud {
+    background-color: var(--gris-translucido);
+    padding: 2%;
+    width: 80%;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    color: var(--primary-color);
+    margin-top: 5vw;
+    margin-left: 15%;
+}
+
+.container-solicitud h3 {
+    text-align: start;
+}
+
+.solicitud-img {
+    align-items: start;
+    margin: 1% 1%;
+}
+
+.solicitud-form {
+
+    strong {
+        text-align: start;
+        font-family: 'Inter';
+        font-size: 1.2em;
+
+    }
+
+    p {
+        background-color: #ffffff;
+        padding: 5%;
+        margin: 1%;
+        border-radius: 20px;
+        font-family: 'Inter';
+        font-size: 1.2em;
+        color: black;
+        font-weight: bolder;
+    }
 }

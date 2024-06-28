@@ -44,7 +44,8 @@
                         <p>PEDIDOS DE ADOPCION</p>
                     </a>
 
-                    <a href="11_postulamiento_voluntario.html" class="nav-item" style="background-color: var(--primary-color);">
+                    <a href="11_postulamiento_voluntario.html" class="nav-item"
+                        style="background-color: var(--primary-color);">
                         <i class="fa-solid fa-file" style="color: black; font-size: 2.6em;"></i>
                         <p>POSTULANTES</p>
                     </a>
@@ -54,22 +55,28 @@
         <!--LISTA DE CONSUTLA DE LOS USUARIOS REGISTRADOS EN EL SITIO WEB-->
         <div class="columna">
             <!--SOLICITUD DE POSTULAMIENTO YA RESPONDIDO EN ESPERA DE EVALUACION-->
-            <div class="container-contenido">
-                <div>
-                    <h3>SOLICITUD DE POSTULAMIENTO</h3>
-                    <!--DATOS DEL USUARIO QUE DESEA POSTULARSE COMO VOLUNTARIO DEL REFUGIO-->
-                    <img src="../assets/iconos/logo_usuario.png" alt="usuario" width="80">
-
-                    <strong>USUARIO</strong>
-                    <strong>Nombre:</strong> Perez, Romina <br>
-                    <strong>Fecha de Nacimiento:</strong> 11/12/1996 <br>
-                    <strong>DNI:</strong> 36.875.234 <br>
-                    <strong>Correo:</strong> perezRomina@gmail.com <br>
-                    <strong>Domicilio:</strong> Av. Roca 56, Pto. Madryn <br>
-                    <strong>Celular:</strong> (2804) - 112233 <br>
-
-                    <div><!--CONTENEDOR PREGUNTAS DEL FORMULARIO CON LAS RESPUESTAS DEL USUARIO-->
-                        <strong>¿Por que desea trabajar con nosotros?</strong> <br>
+            <div class="container-solicitud">
+                <h3>SOLICITUD DE POSTULAMIENTO</h3>
+                <hr class="separador">
+                <!--DATOS DEL USUARIO QUE DESEA POSTULARSE COMO VOLUNTARIO DEL REFUGIO-->
+                <div class="fila">
+                    <div class="solicitud-img">
+                        <i class="fa-solid fa-user" style="color: black; font-size: 5.6em;"></i>
+                    </div>
+                    <div class="info-user">
+                        <strong>USUARIO</strong>
+                        <strong>Nombre:</strong> Perez, Romina <br>
+                        <strong>Fecha de Nacimiento:</strong> 11/12/1996 <br>
+                        <strong>DNI:</strong> 36.875.234 <br>
+                        <strong>Correo:</strong> perezRomina@gmail.com <br>
+                        <strong>Domicilio:</strong> Av. Roca 56, Pto. Madryn <br>
+                        <strong>Celular:</strong> (2804) - 112233 <br>
+                    </div>
+                </div>
+                <hr class="separador">
+                <div class="solicitud-form"><!--CONTENEDOR PREGUNTAS DEL FORMULARIO CON LAS RESPUESTAS DEL USUARIO-->
+                    <strong>¿Por que desea trabajar con nosotros?</strong> <br>
+                    <div class="respuestas-solicitud">
                         <p>Hola, me gusta mucho la idea de poder ayudar a los animales, lo hago desde hace mucho tiempo,
                             le
                             doy transito a muchos <br>
@@ -78,7 +85,9 @@
                             los perros ya que tengo <br>
                             mucha mas experiencia en ese campo.
                         </p>
-                        <strong>¿Tiene experiencia trabajando en el cuidado de animales?</strong><br>
+                    </div>
+                    <strong>¿Tiene experiencia trabajando en el cuidado de animales?</strong><br>
+                    <div class="respuestas-solicitud">
                         <p>Nunca trabaje formalmente en un lugar como un una protectora de animales o un refugio, pero
                             estoy
                             encantada <br>
@@ -87,14 +96,14 @@
                             de calle.
                         </p>
                     </div>
-                    <!--BOTONES-->
-                    <form>
-                        <button type="submit"> <a href="11_postulamiento_voluntario.html">ACEPTAR <img
-                                    src="../assets/iconos/aceptar.png" width="20"></button></a>
-                        <button type="submit"> <a href="11_postulamiento_voluntario.html">RECHAZAR</a> <img
-                                src="../assets/iconos/cancelar.png" width="20"></button>
-                    </form>
                 </div>
+                <!--BOTONES-->
+                <li class="sub-accordion__item" style="display: flex; flex-direction: row; justify-content: end; margin-right: 3%;">
+                    <button type="button">MODIFICAR &nbsp;<i class="fa-solid fa-circle-check fa-xl"
+                        style="color: #63E6BE;"></i></button>
+                    <button type="button">ELIMINAR &nbsp;<i class="fa-solid fa-circle-xmark fa-xl"
+                        style="color: #fb8e8e;"></i></button>
+                  </li>
             </div>
         </div>
     </div>
