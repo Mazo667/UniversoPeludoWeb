@@ -25,45 +25,69 @@
 
 
     <div class="container_translucido"><!--CONTENEDOR FORMULARIO DE ADOPCION-->
-        <h1>FORMULARIO DE ADOPCION</h1>
-        <p>
-            <strong>Solicitante</strong><br>
-            <strong>NOMBRE:</strong>Mica SUAREZ <br>
-            <strong>FECHA DE NACIMIENTO:</strong>19/05/1992 <br>
-            <strong>DNI: </strong>37.140.100 <br>
-            <strong>CORRE ELECTRONICO: </strong>mica@gmail.com <br>
-            <strong>DOMICILIO: </strong>La pampa 350 Rawson,Chubut <br>
-            <strong>TELEFONO: </strong>(2804)-002244 <br>
-            <br>
-            <!--ENLACE PARA MODIFICAR INFOMRACION-->
-            <a href="1_mi_cuenta.html">
-                <h6>*¿hay algun dato incorrecto? Haz click aqui para modificar</h6>
-            </a>
-        </p>
-
-        <img src="../assets/imagenes/zoe.png" alt="guanaca" width="250">
-
-        <div class="subformulario">
-            <form><!--FORMULARIO-->
-                <label> ¿Tiene experencia previa en el cuidado de mascota? Si es asi, ¿Que tipo de mascota has
-                    tenido?</label> <br>
-                <textarea cols="60" rows="5" id="respuesta" placeholder="Respuesta..." name="respuesta"></textarea><br>
-                <label> ¿Dispone de un lugar adecuado para la mascota?Describir brevemente</label> <br>
-                <textarea cols="60" rows="5" id="respuesta" placeholder="Respuesta..." name="respuesta"
-                    required></textarea><br>
-                <label> ¿Convive con otros animales en mismo espacio?¿Cuales son?</label> <br>
-                <textarea cols="60" rows="5" id="respuesta" placeholder="Respuesta..." name="respuesta"
-                    required></textarea><br>
-                <br><br>
-
-                <!--BOTONES-->
-                <button type="button"><a href="4_formulario_adopcion.html">ADOPTAR &nbsp;<i
-                            class="fa-solid fa-circle-check fa-xl" style="color: #63E6BE;"></i></button></a>
-                <button type="button"><a href="../publico/5_busqueda_mascotas.html">CANCELAR &nbsp;<i
-                            class="fa-solid fa-circle-xmark fa-xl" style="color: #fb8e8e;"></i></button></a>
-            </form>
-        </div>
+        <table style="text-align: start; align-items: start;">
+            <tr>
+                <th>Solicitante</th>
+                <td>Mica SUAREZ</td>
+                <td rowspan="7">
+                    <img src="../assets/imagenes/zoe.png" alt="guanaca" width="250">
+                </td>
+            </tr>
+            <tr>
+                <th>FECHA DE NACIMIENTO:</th>
+                <td>19/05/1992</td>
+            </tr>
+            <tr>
+                <th>DNI:</th>
+                <td>37.140.100</td>
+            </tr>
+            <tr>
+                <th>CORREO ELECTRONICO:</th>
+                <td>mica@gmail.com</td>
+            </tr>
+            <tr>
+                <th>DOMICILIO:</th>
+                <td>La pampa 350 Rawson, Chubut</td>
+            </tr>
+            <tr>
+                <th>TELEFONO:</th>
+                <td>(2804)-002244</td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <a href="1_mi_cuenta.html">*¿Hay algún dato incorrecto? Haz click aquí para modificar</a>
+                </td>
+            </tr>
+            <!-- Preguntas del formulario -->
+            <tr>
+                <td colspan="3">¿Tiene experiencia previa en el cuidado de mascota? Si es así, ¿Qué tipo de mascota has tenido?</td>
+            </tr>
+            <tr>
+                <td colspan="3"><textarea cols="60" rows="5" placeholder="Respuesta..." name="respuesta"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="3">¿Dispone de un lugar adecuado para la mascota? Describir brevemente</td>
+            </tr>
+            <tr>
+                <td colspan="3"><textarea cols="60" rows="5" placeholder="Respuesta..." name="respuesta" required></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="3">¿Convive con otros animales en el mismo espacio? ¿Cuáles son?</td>
+            </tr>
+            <tr>
+                <td colspan="3"><textarea cols="60" rows="5" placeholder="Respuesta..." name="respuesta" required></textarea></td>
+            </tr>
+            <!-- Botones -->
+            <tr>
+                <td colspan="3">
+                    <button type="button"><a href="4_formulario_adopcion.html">ADOPTAR</a></button>
+                    <button type="button"><a href="../publico/5_busqueda_mascotas.html">CANCELAR</a></button>
+                </td>
+            </tr>
+        </table>
     </div>
+
+    
 </body>
 
 </html>
